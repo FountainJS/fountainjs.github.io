@@ -1,42 +1,17 @@
 import React, {Component} from 'react';
 
-const styles = {
-  title: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    padding: '1rem',
-    backgroundColor: '#cf4646',
-    color: 'white'
-  },
-  h1: {
-    fontWeight: 300,
-    fontSize: '4rem',
-    margin: '1rem'
-  },
-  logo: {
-    height: '12rem',
-    backgroundColor: 'white',
-    borderRadius: '1rem',
-    margin: '1rem'
-  },
-  h2: {
-    fontWeight: 300,
-    fontSize: '2rem',
-    margin: '.5rem'
-  }
-};
-
 export default class Title extends Component {
   render() {
     return (
-      <div style={styles.title}>
-        <h1 style={styles.h1}>'Allo, 'Allo!</h1>
-        <div>
-          <img style={styles.logo} src="https://raw.githubusercontent.com/FountainJS/generator-fountain-webapp/master/docs/assets/yeoman.png"/>
-          <img style={styles.logo} src="https://raw.githubusercontent.com/FountainJS/generator-fountain-webapp/master/docs/assets/fountain.png"/>
+      <div className="title">
+        <div className="title-text">
+          <h1 className="title-text-title">
+            A complete set of Yeoman generators to start all your frontend projects
+          </h1>
         </div>
-        <h2 style={styles.h2}>Always a pleasure scaffolding your apps.</h2>
+        <div className="title-logo">
+          <img src="assets/imgs/foutainjs-logo6-large-noback-machine.png"/>
+        </div>
       </div>
     );
   }

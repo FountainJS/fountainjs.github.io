@@ -10,8 +10,6 @@ import configureStore from '../src/app/redux';
 // import renderFullPage from './render-full-page.js';
 import routes from '../src/routes';
 
-const indexHtml = fs.readFileSync(path.join(__dirname, '../dist/index.html')).toString();
-
 // // Wait for the actions that the components loaded needs
 // function fetchComponentData(dispatch, components, params) {
 //   const needs = components.reduce((prev, current) => {
@@ -58,6 +56,8 @@ const indexHtml = fs.readFileSync(path.join(__dirname, '../dist/index.html')).to
 // }
 
 export default function render(location) {
+  const indexHtml = fs.readFileSync(path.join(__dirname, '../dist/index.html')).toString();
+
   return new Promise(resolve => {
     match({routes, location}, (error, redirectLocation, renderProps) => {
       const store = configureStore();
@@ -72,12 +72,12 @@ export default function render(location) {
       const initialState = store.getState();
 
       // Send the rendered page back to the client
-      resolve(renderFullPage(html, initialState));
+      resolve(renderFullPage(indexHtml, html, initialState));
     });
   });
 }
 
-function renderFullPage(html, initialState) {
+function renderFullPage(indexHtml, html, initialState) {
   const content = indexHtml.replace(/<div id="root"><\/div>/, `
     <div id="root">${html}</div>
     <script>

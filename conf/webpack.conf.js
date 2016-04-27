@@ -30,6 +30,13 @@ module.exports = {
           'react-hot',
           'babel'
         ]
+      },
+      {
+        test: /\.ttf$/,
+        exclude: /node_modules/,
+        loaders: [
+          'file'
+        ]
       }
     ]
   },

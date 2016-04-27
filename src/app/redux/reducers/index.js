@@ -1,4 +1,4 @@
 import {combineReducers} from 'redux';
-import techs from './techs';
+import home from './home';
 
-export default combineReducers({techs});
+export default combineReducers({home});

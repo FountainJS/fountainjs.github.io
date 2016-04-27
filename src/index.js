@@ -6,12 +6,12 @@ import {render} from 'react-dom';
 import {Provider} from 'react-redux';
 import configureStore from './app/redux';
 import routes from './routes';
-import {fetchTechs} from './app/redux/actions/actions';
+import {fetchOptions} from './app/redux/actions/home';
 
-import './index.scss';
+import './styles/index.scss';
 
 const store = configureStore();
-store.dispatch(fetchTechs());
+store.dispatch(fetchOptions());
 
 render(
   <Provider store={store}>
