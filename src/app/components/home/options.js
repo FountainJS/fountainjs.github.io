@@ -5,7 +5,7 @@ export default class Options extends Component {
   render() {
     const {options, selection, select} = this.props;
     return (
-      <div className="options">
+      <div className="options container">
         <h2>Choose your technologies</h2>
         <p>Fountain offers you to choose amonst all the most populars technologies both for your development framework and your tooling.</p>
         <p>These choices are very structurant so choose them carefully but freely: Fountain will be able to generate a fully configured and working project whatever the options you chosse.</p>

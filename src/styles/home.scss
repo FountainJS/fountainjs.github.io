@@ -1,28 +1,32 @@
 .title {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 20rem;
-  padding: 1rem;
   background-color: $blue;
   color: $white;
   text-align: center;
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    // height: 20rem;
+    padding: 1rem;
+  }
 }
 
 .title-text {
-  flex: 1;
+  flex: 2;
   width: 50%;
 }
 
 .title-text-title {
-  font-size: 5rem;
+  font-size: 4rem;
+  font-weight: normal;
   font-family: $parisish;
 }
 
 .title-logo {
   flex: 1;
   width: 50%;
-  height: 100%;
+  height: 20rem;
 
   img {
     height: 100%;
@@ -38,7 +42,9 @@
   h3 {
     text-align: center;
     font-size: 3.5rem;
+    font-weight: normal;
     font-family: $parisish;
+    margin-top: 2rem;
     margin-bottom: 1rem;
   }
 }
@@ -72,8 +78,7 @@
 }
 
 .option-value {
-  // height: 12rem;
-  width: 10rem;
+  width: 12rem;
   padding: 1rem;
 
   img {
