@@ -7,10 +7,10 @@ export default class Title extends Component {
         <div className="container">
           <div className="title-text">
             <h1 className="title-text-title">
-              A complete set of Yeoman generators to start all your frontend projects
+              Fountain Documentation
             </h1>
           </div>
-          <div className="title-logo">
+          <div className="title-logo small">
             <img src="/assets/imgs/foutainjs-logo6-large-noback-machine.png"/>
           </div>
         </div>

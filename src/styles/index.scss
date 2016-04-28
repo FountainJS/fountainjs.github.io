@@ -3,18 +3,18 @@
 
 @font-face {
   font-family: 'Parisish';
-  src: url('../assets/fonts/Parisish.ttf') format('truetype');
+  src: url('/assets/fonts/Parisish.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Roboto';
-  src: url('../assets/fonts/Roboto-Regular.ttf') format('truetype');
+  src: url('/assets/fonts/Roboto-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Roboto';
   font-weight: bold;
-  src: url('../assets/fonts/Roboto-Bold.ttf') format('truetype');
+  src: url('/assets/fonts/Roboto-Bold.ttf') format('truetype');
 }
 
 * {
@@ -58,6 +58,7 @@ header {
   align-items: center;
   background-color: $black;
   color: $white;
+  height: 3rem;
 }
 
 header a {
@@ -71,17 +72,22 @@ header a {
 .header-title {
   flex: 1;
   font-size: 1.5rem;
-  margin: 1rem;
+  margin: 0 1rem;
 }
 
 .header-links {
   flex: 1;
   text-align: right;
-  margin: 1rem;
+  margin: 0 1rem;
 
   a {
     margin-left: 1rem;
   }
+}
+
+.header-social img {
+  height: 2rem;
+  vertical-align: middle;
 }
 
 footer {

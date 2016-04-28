@@ -5,7 +5,7 @@ function receiveOption(options) {
 
 export function fetchOptions() {
   return dispatch => {
-    return fetch('data/options.json')
+    return fetch('/data/options.json')
       .then(response => response.json())
       .then(content => dispatch(receiveOption(content)));
   };

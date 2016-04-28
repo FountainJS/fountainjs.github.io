@@ -6,20 +6,27 @@ export class Header extends Component {
     return (
       <header>
         <p className="header-title">
-          <a href="https://github.com/FountainJS/generator-fountain-webapp" target="_blank">
-            Yeoman Foutain generators
-          </a>
+          Yeoman Fountain generators
         </p>
         <p className="header-links">
           <Link to="/">
             Home
           </Link>
-          <Link to="/doc">
+          <Link to="/doc/toto">
             Documentation
+          </Link>
+          <Link to="/gulp-angular">
+            gulp-angular
           </Link>
           <Link to="/blog">
             Blog
           </Link>
+          <a className="header-social" href="https://github.com/FountainJS/generator-fountain-webapp">
+            <img src="/assets/imgs/social-github.svg"/>
+          </a>
+          <a className="header-social" href="https://twitter.com/yeomanfountain">
+            <img src="/assets/imgs/social-twitter.svg"/>
+          </a>
         </p>
       </header>
     );

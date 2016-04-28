@@ -9,5 +9,6 @@ export default (
   <Route component={Main}>
     <Route path="/" component={Home}/>
     <Route path="/doc" component={Doc}/>
+    <Route path="/doc/:doc" component={Doc}/>
   </Route>
 );
