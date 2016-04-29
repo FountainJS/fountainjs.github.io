@@ -1,0 +1,15 @@
+.doc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.doc-content {
+  flex: 4;
+  width: 80%;
+}
+
+.doc-toc {
+  flex: 1;
+  width: 20%;
+}

@@ -3,8 +3,17 @@ import React, {Component, PropTypes} from 'react';
 import Title from './title';
 import Usage from './usage';
 import Options from './options';
+import {fetchOptions} from '../../redux/actions/home';
 
 export default class Home extends Component {
+  static propTypes = {
+    options: PropTypes.array.isRequired,
+    selection: PropTypes.array.isRequired,
+    select: PropTypes.func.isRequired
+  };
+
+  static needs = [fetchOptions];
+
   render() {
     const optionsProps = pick(this.props, 'options', 'selection', 'select');
     return (
@@ -16,9 +25,3 @@ export default class Home extends Component {
     );
   }
 }
-
-Home.propTypes = {
-  options: PropTypes.array.isRequired,
-  selection: PropTypes.array.isRequired,
-  select: PropTypes.func.isRequired
-};

@@ -7,7 +7,8 @@ export function fetchOptions() {
   return dispatch => {
     return fetch('/data/options.json')
       .then(response => response.json())
-      .then(content => dispatch(receiveOption(content)));
+      .then(content => dispatch(receiveOption(content)))
+      .catch(console.error);
   };
 }
 

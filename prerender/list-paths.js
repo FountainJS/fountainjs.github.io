@@ -20,11 +20,11 @@ export default function listPaths() {
         return conf
           .map(description => description.path)
           .filter(path => path)
-          .map(path => current.replace(matchArg, path));
+          .map(path => current.replace(matchArg, `/${path}`));
       }
       return current;
     }
   }
 
-  return _.flatten(mapPaths(routes, ''));
+  return _.flattenDeep(mapPaths(routes, ''));
 }

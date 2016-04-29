@@ -18,19 +18,20 @@ const hub = new HubRegistry([
 // Tell gulp to use the tasks just loaded
 gulp.registry(hub);
 
-gulp.task('build', gulp.series(gulp.parallel('other', 'webpack:dist'), prerenderTask));
+gulp.task('build', gulp.series(gulp.parallel('other', 'webpack:dist'), 'prerender'));
 gulp.task('test', gulp.series('karma:single-run'));
 gulp.task('test:auto', gulp.series('karma:auto-run'));
 gulp.task('serve', gulp.series('webpack:watch', 'watch', 'browsersync'));
 gulp.task('serve:dist', gulp.series('default', 'browsersync:dist'));
 gulp.task('default', gulp.series('clean', 'build'));
 gulp.task('watch', watch);
+gulp.task('prerender', prerender);
 
 function watch(done) {
   gulp.watch(path.join(conf.paths.tmp, 'index.html'), browserSync.reload);
   done();
 }
 
-function prerenderTask() {
-  return prerender();
-}
+// function prerenderTask() {
+//   return prerender();
+// }

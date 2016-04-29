@@ -8,9 +8,9 @@ const mkdirp = require('mkdirp');
 const listPaths = require('./list-paths').default;
 const render = require('./render').default;
 
-const paths = listPaths();
-
 module.exports = function prerender() {
+  const paths = listPaths();
+
   return co(function *() {
     const files = yield paths.map(path => ({
       path, content: render(path)

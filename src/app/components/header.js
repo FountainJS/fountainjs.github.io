@@ -12,7 +12,7 @@ export class Header extends Component {
           <Link to="/">
             Home
           </Link>
-          <Link to="/doc/toto">
+          <Link to="/doc">
             Documentation
           </Link>
           <Link to="/gulp-angular">
