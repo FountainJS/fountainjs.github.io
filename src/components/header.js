@@ -6,12 +6,11 @@ export class Header extends Component {
     return (
       <header>
         <p className="header-title">
-          Yeoman Fountain generators
+          <Link to="/">
+            Yeoman Fountain generators
+          </Link>
         </p>
         <p className="header-links">
-          <Link to="/">
-            Home
-          </Link>
           <Link to="/doc">
             Documentation
           </Link>
