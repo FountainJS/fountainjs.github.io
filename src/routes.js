@@ -1,10 +1,10 @@
 import React from 'react';
 import {Route, IndexRoute} from 'react-router';
 
-import Main from './app/components/main';
-import Home from './app/redux/containers/home';
-import Doc from './app/redux/containers/doc';
-import DocContent from './app/redux/containers/doc-content';
+import Main from './components/main';
+import Home from './redux/containers/home';
+import Doc from './redux/containers/doc';
+import DocContent from './redux/containers/doc-content';
 
 export default (
   <Route component={Main}>

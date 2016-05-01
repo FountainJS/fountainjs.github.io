@@ -4,9 +4,9 @@ import React from 'react';
 import {Router, browserHistory} from 'react-router';
 import {render} from 'react-dom';
 import {Provider} from 'react-redux';
-import configureStore from './app/redux';
+import configureStore from './redux';
 import routes from './routes';
-import {fetchOptions} from './app/redux/actions/home';
+import {fetchOptions} from './redux/actions/home';
 
 import './styles/index.scss';
 

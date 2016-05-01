@@ -6,7 +6,7 @@ import {Provider} from 'react-redux';
 import {renderToString} from 'react-dom/server';
 import {RouterContext, match} from 'react-router';
 
-import configureStore from '../src/app/redux';
+import configureStore from '../src/redux';
 import routes from '../src/routes';
 
 // Fetch "home made" mock
