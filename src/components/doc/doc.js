@@ -8,6 +8,7 @@ export default class Doc extends Component {
   static propTypes = {
     children: PropTypes.element.isRequired,
     docs: PropTypes.array.isRequired,
+    selected: PropTypes.object.isRequired,
     fetch: PropTypes.func.isRequired
   };
 
@@ -27,7 +28,7 @@ export default class Doc extends Component {
           <div className="doc-content">
             {this.props.children}
           </div>
-          <Toc docs={this.props.docs}/>
+          <Toc docs={this.props.docs} selected={this.props.selected}/>
         </div>
       </div>
     );

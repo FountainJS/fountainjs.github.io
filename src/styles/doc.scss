@@ -13,3 +13,26 @@
   flex: 1;
   width: 20%;
 }
+
+.doc-toc-item {
+  list-style-type: none;
+  padding: .5rem 1rem;
+  border-bottom: 1px solid $grey;
+
+  a {
+    color: $linkBlue;
+
+    &:hover {
+      color: $black;
+    }
+  }
+
+  &.active {
+    background-color: $blue;
+
+    a {
+      color: white;
+      font-style: italic;
+    }
+  }
+}
