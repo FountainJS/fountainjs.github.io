@@ -1,4 +1,4 @@
-## Intro ![Logo](/assets/img/blog/generator-gulp-angular-logo.png)
+## Intro ![Logo](/assets/imgs/blog/generator-gulp-angular-logo.png)
 
 It has now been more than a year since we ([@Swiip](https://twitter.com/Swiip) and [@zckrs](https://twitter.com/Zckrs)), started work on our Yeoman generator. Today we are celebrating the release of our first major and stable version: [generator-gulp-angular 1.0.0](https://www.npmjs.com/package/generator-gulp-angular).
 
@@ -17,7 +17,7 @@ We followed all the precepts of Yeoman and added our own:
 
 We are not joking around when we talk about this being a stable version. We integrated lots of technologies and languages, from CoffeeScript to TypeScript, to Sass to Stylus. The number of combinations exceeds several million! We wrote tests, documentation and fixed issues for 12 minor versions and 2 release candidates, to be able to deliver a perfectly configured seed project, no matter the options you choose.
 
-![](/assets/img/blog/technologies-gga.png)
+![](/assets/imgs/blog/technologies-gga.png)
 
 ### Optimization served
 
