@@ -15,7 +15,9 @@ export default function listPaths() {
       });
     } else {
       if (matchArg.test(route.props.path)) {
-        const confPath = path.join(__dirname, '../src', route.props.component.index);
+        const param = _.keys(route.props.component.index)[0];
+        const index = route.props.component.index[param];
+        const confPath = path.join(__dirname, '../src', index);
         const conf = require(confPath);
         return conf
           .map(description => description.path)

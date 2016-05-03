@@ -11,7 +11,7 @@ export default class DocContent extends Component {
     fetch: PropTypes.func.isRequired
   };
 
-  static index = 'data/docs.json';
+  static index = {doc: 'data/docs.json'};
 
   static needs = [fetchDocContent];
 

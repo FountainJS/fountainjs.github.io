@@ -31,7 +31,3 @@ function watch(done) {
   gulp.watch(path.join(conf.paths.tmp, 'index.html'), browserSync.reload);
   done();
 }
-
-// function prerenderTask() {
-//   return prerender();
-// }

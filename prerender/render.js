@@ -31,10 +31,12 @@ function fetchComponentData(dispatch, components, params) {
   const needs = components.reduce((prev, current) => {
     let result = prev;
     if (_.isArray(current.needs)) {
-      if (_.isString(current.index)) {
-        const index = require(path.join('../src', current.index));
-        const doc = _.find(index, {path: params.doc || ''});
-        result = current.needs.map(need => () => need(doc.file)).concat(prev);
+      if (_.isObject(current.index)) {
+        console.log('coucou', current.index);
+        const param = _.keys(current.index)[0];
+        const index = require(path.join('../src', current.index[param]));
+        const description = _.find(index, {path: params[param] || ''});
+        result = current.needs.map(need => () => need(description.file)).concat(prev);
       } else {
         result = current.needs.concat(prev);
       }

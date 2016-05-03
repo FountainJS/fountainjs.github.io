@@ -19,7 +19,7 @@ function receiveDocContent(file, content) {
 
 export function fetchDocContent(file) {
   return dispatch => {
-    return fetch(`/data/doc/${file}`)
+    return fetch(`/data/docs/${file}`)
       .then(response => response.text())
       .then(content => dispatch(receiveDocContent(file, content)))
       .catch(console.error);

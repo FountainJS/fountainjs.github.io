@@ -1,0 +1,14 @@
+[
+  {
+    "path": "gulp-angular-v1",
+    "file": "gulp-angular-v1.md",
+    "title": "generator-gulp-angular 1.0.0 stable released",
+    "excerpt": "Several million possibilities to simplify your Angular development using the latest tools available"
+  },
+  {
+    "path": "why-still-gulp",
+    "file": "why-still-gulp.md",
+    "title": "Why (still?) Gulp",
+    "excerpt": "Fountain is built on top of Gulp in an era where there is lot of other choices. Here's why!"
+  }
+]
