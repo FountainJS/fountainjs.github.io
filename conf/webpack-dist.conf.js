@@ -3,6 +3,7 @@ const conf = require('./gulp.conf');
 const path = require('path');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const autoprefixer = require('autoprefixer');
 
 module.exports = {
@@ -24,12 +25,12 @@ module.exports = {
       },
       {
         test: /\.(css|scss)$/,
-        loaders: [
+        loader: ExtractTextPlugin.extract(
           'style',
           'css',
           'sass',
           'postcss'
-        ]
+        )
       },
       {
         test: /\.js$/,
@@ -52,12 +53,13 @@ module.exports = {
     }),
     new webpack.optimize.UglifyJsPlugin({
       compress: {unused: true, dead_code: true} // eslint-disable-line camelcase
-    })
+    }),
+    new ExtractTextPlugin('/index-[contenthash].css')
   ],
   postcss: () => [autoprefixer],
   output: {
     path: path.join(process.cwd(), conf.paths.dist),
-    filename: 'index-[hash].js'
+    filename: '/index-[hash].js'
   },
   entry: `./${conf.path.src('index')}`
 };
