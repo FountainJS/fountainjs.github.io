@@ -32,7 +32,6 @@ function fetchComponentData(dispatch, components, params) {
     let result = prev;
     if (_.isArray(current.needs)) {
       if (_.isObject(current.index)) {
-        console.log('coucou', current.index);
         const param = _.keys(current.index)[0];
         const index = require(path.join('../src', current.index[param]));
         const description = _.find(index, {path: params[param] || ''});
