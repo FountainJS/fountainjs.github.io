@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  - '5'
+
+cache:
+  directories:
+  - node_modules
+env:
+  global:
+    - secure: lkTGpgQdeg5mBji8hg1ZpKO3eO4P0KNgy/VUY3o9WK9poKp+x8Hg72lwRsk2UYxeIUBzxJvSk0FFleeyKnEfH2o6nzvFqseUl+6WlOfFW2lVrDQD7gpT8uk73j6UNVT/oqh3mPO+Hw3c/AnFX7BtLaJJqjn684Twu/uX3wlP2T5dQVIdkHYWW4uxK1qvrGDHux3xDUrDMg+mO4GQKMqiPFlWUGcZHrZNwzMgkbFfhnPbV7W1BPtzPXWfOgVf++hy2wSEWJ3yxcGGC859VioBIgpxXZ6yYIzMto6HmgqL3OaH0jth5Ub5G3GOK1w5y0KmFT4p6wbFDhqm59hCXBxZ8cdD+YH6eEInvhwFbqaI2R1TFtJQCH6eAz3biGvq+vmkRSgwqmOI90F4gUha16xYvGIhDq27j1mVc/BrMtFAAOaa3R74HRHd0Y81FqcCPG2Og6qessns5nPJtSen6vvd9ZJVftRsMUhnOO8AovOZIodm0uP9iDNe3gwpWyXn0YUyXloXeZooXp+Fr6QhvzPcE70K2iwLkzudYhnC1e+s1eOVmPf40zB/vpCUAcuzf9CMxfq7fx1ALcAE8D+Fk2kW/kBZycBlT2KwK5VzpfeplbnuOASRjtlER/u/tDDzJoF/qgbSgQtO+kHWCZ1rImoYI9I4r2dOA8pk8CmUZW65BE8=
+    - GIT_NAME: Travis CI
+    - GIT_EMAIL: nobody@nobody.org
+    - GITHUB_REPO: FountainJS/fountainjs.io
+    - GIT_SOURCE: dist
+
+script:
+- gulp
+
+after_success:
+- if [ "$TRAVIS_BRANCH" = "master" -a "$TRAVIS_PULL_REQUEST" = "false" ] && [[ ${TRAVIS_JOB_NUMBER} == *".1" ]]; then npm install git-update-ghpages; ./node_modules/.bin/git-update-ghpages -e; fi

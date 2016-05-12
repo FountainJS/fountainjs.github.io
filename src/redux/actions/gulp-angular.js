@@ -19,7 +19,6 @@ function receiveGulpAngularContent(file, content) {
 
 export function fetchGulpAngularContent(file) {
   return dispatch => {
-    console.log('fetchGulpAngularContent', file);
     return fetch(`/data/gulp-angular/${file}`)
       .then(response => response.text())
       .then(content => dispatch(receiveGulpAngularContent(file, content)))
