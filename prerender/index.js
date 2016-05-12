@@ -15,14 +15,11 @@ module.exports = function prerender() {
     const files = yield paths.map(path => ({
       path, content: render(path)
     }));
-    yield files.map(file => {
-      // console.log('mkdir', path.join(__dirname, '../dist', file.path));
-      return mkdirp(path.join(__dirname, '../dist', file.path));
-    });
+    yield files.map(file => mkdirp(path.join(__dirname, '../dist', file.path)));
     yield files.map(file => {
       const filePath = path.join(__dirname, '../dist', file.path, 'index.html');
-      // console.log('coucou', filePath);
       return fs.writeFile(filePath, file.content);
     });
+    yield fs.writeFile(path.join(__dirname, '../dist/CNAME'), 'fountainjs.io');
   });
 };
