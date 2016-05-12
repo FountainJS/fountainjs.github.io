@@ -1,0 +1,17 @@
+[
+  {
+    "path": "",
+    "title": "Getting Started",
+    "file": "getting-started.md"
+  },
+  {
+    "path": "user-guide",
+    "title": "User Guide",
+    "file": "user-guide.md"
+  },
+  {
+    "path": "how-it-works",
+    "title": "How it works",
+    "file": "how-it-works.md"
+  }
+]
