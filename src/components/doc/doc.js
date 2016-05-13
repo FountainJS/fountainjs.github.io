@@ -1,4 +1,3 @@
-import _ from 'lodash';
 import React, {Component, PropTypes} from 'react';
 import Title from './title';
 import Toc from './toc';
@@ -15,9 +14,7 @@ export default class Doc extends Component {
   static needs = [fetchDocs];
 
   componentDidMount() {
-    if (_.isEmpty(this.props.docs)) {
-      this.props.fetch();
-    }
+    this.props.fetch();
   }
 
   render() {

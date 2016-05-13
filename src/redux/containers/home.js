@@ -1,6 +1,6 @@
 import {connect} from 'react-redux';
 import Home from '../../components/home/home';
-import {selectOption} from '../actions/home';
+import {fetchOptions, selectOption} from '../actions/home';
 
 const mapStateToProps = state => {
   return {
@@ -11,6 +11,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
+    fetch: () => dispatch(fetchOptions()),
     select: (...args) => dispatch(selectOption(...args))
   };
 };

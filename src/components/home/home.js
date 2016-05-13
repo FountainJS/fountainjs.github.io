@@ -9,10 +9,15 @@ export default class Home extends Component {
   static propTypes = {
     options: PropTypes.array.isRequired,
     selection: PropTypes.array.isRequired,
-    select: PropTypes.func.isRequired
+    select: PropTypes.func.isRequired,
+    fetch: PropTypes.func.isRequired
   };
 
   static needs = [fetchOptions];
+
+  componentDidMount() {
+    this.props.fetch();
+  }
 
   render() {
     const optionsProps = pick(this.props, 'options', 'selection', 'select');

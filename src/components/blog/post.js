@@ -1,6 +1,5 @@
 /* eslint "react/no-danger": 0 */
 
-import _ from 'lodash';
 import React, {Component, PropTypes} from 'react';
 import {fetchPosts, fetchPostContent} from '../../redux/actions/blog';
 
@@ -25,12 +24,8 @@ export default class Post extends Component {
   }
 
   fetch(props) {
-    if (_.isEmpty(this.props.post)) {
-      this.props.fetchPosts();
-    }
-    if (_.isObject(props.post) && _.isEmpty(props.content)) {
-      props.fetch(props.post.file);
-    }
+    props.fetchPosts();
+    props.fetch(props.post.file);
   }
 
   render() {

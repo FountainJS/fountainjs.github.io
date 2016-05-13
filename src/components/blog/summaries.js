@@ -1,6 +1,5 @@
 /* eslint "react/no-danger": 0 */
 
-import _ from 'lodash';
 import React, {Component, PropTypes} from 'react';
 import {Link} from 'react-router';
 import {fetchPosts} from '../../redux/actions/blog';
@@ -14,9 +13,7 @@ export default class Summaries extends Component {
   static needs = [fetchPosts];
 
   componentDidMount() {
-    if (_.isEmpty(this.props.posts)) {
-      this.props.fetch();
-    }
+    this.props.fetch();
   }
 
   render() {
