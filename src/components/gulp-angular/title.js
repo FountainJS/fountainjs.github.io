@@ -11,7 +11,7 @@ export default class Title extends Component {
             </h1>
           </div>
           <div className="title-logo">
-            <img src="/assets/imgs/generator-gulp-angular-logo.png"/>
+            <img className="gulp-angular-logo" src="/assets/imgs/gulp-angular/generator-gulp-angular-logo.png"/>
           </div>
         </div>
       </div>
