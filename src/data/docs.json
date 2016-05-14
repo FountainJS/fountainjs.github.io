@@ -5,13 +5,18 @@
     "file": "getting-started.md"
   },
   {
-    "path": "user-guide",
-    "title": "User Guide",
-    "file": "user-guide.md"
+    "path": "usage",
+    "title": "Usage",
+    "file": "usage.md"
   },
   {
-    "path": "how-it-works",
-    "title": "How it works",
-    "file": "how-it-works.md"
+    "path": "design",
+    "title": "Fountain design",
+    "file": "design.md"
+  },
+  {
+    "path": "contributing",
+    "title": "Contributin",
+    "file": "contributing.md"
   }
 ]
