@@ -1,5 +1,5 @@
 import {REQUEST_POSTS, RECEIVE_POSTS, REQUEST_POST_CONTENT, RECEIVE_POST_CONTENT} from '../actions/blog';
-import marked from 'marked';
+import marked from '../../marked';
 
 const initialState = {
   posts: [],

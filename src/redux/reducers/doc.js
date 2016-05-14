@@ -1,5 +1,5 @@
 import {REQUEST_DOCS, RECEIVE_DOCS, REQUEST_DOC_CONTENT, RECEIVE_DOC_CONTENT} from '../actions/doc';
-import marked from 'marked';
+import marked from '../../marked';
 
 const initialState = {
   docs: [],

@@ -1,5 +1,5 @@
 import {REQUEST_GULP_ANGULAR, RECEIVE_GULP_ANGULAR, REQUEST_GULP_ANGULAR_CONTENT, RECEIVE_GULP_ANGULAR_CONTENT} from '../actions/gulp-angular';
-import marked from 'marked';
+import marked from '../../marked';
 
 const initialState = {
   docs: [],
