@@ -86,5 +86,93 @@
         ]
       }
     ]
+  },
+  {
+    "title": "JavaScript preprocessing",
+    "values": [
+      {
+        "name": "JavaScript (no preprocessors)",
+        "logo": "/assets/imgs/js.png",
+        "description": [
+          "Good old JavaScript with all the features and quirks we love and hate.",
+          "",
+          "No preprocessing on the JavaScript code. You'll get (almost) your code on the browser.",
+          "",
+          "It allows you to use the exact level of syntax depending on your browsers requirements."
+        ]
+      },
+      {
+        "name": "ECMAScript 2015 with Babel",
+        "logo": "/assets/imgs/babel.png",
+        "description": [
+          "### ES2015 and beyond",
+          "Babel has support for the latest version of JavaScript through syntax transformers. These plugins allow you to use new syntax, right now without waiting for browser support. Check out our ES2015 preset to get started.",
+          "### Polyfill",
+          "Since Babel only transforms syntax (like arrow functions), you can use babel-polyfill in order to support new globals such as Promise or new native methods like String.padStart (left-pad). It uses core-js and regenerator. Check out our babel-polyfill docs for more info.",
+          "### JSX and Flow",
+          "Babel can convert JSX syntax and strip out type annotations. Check out our React preset to get started. Use it together with the babel-sublime package to bring syntax highlighting to a whole new level.",
+          "### Pluggable",
+          "Babel is built out of plugins. Compose your own transformation pipeline using existing plugins or write your own. Easily use a set of plugins by using or creating a preset."
+        ]
+      },
+      {
+        "name": "TypeScript",
+        "logo": "/assets/imgs/typescript.png",
+        "description": [
+          "### Starts and ends with JavaScript",
+          "TypeScript starts from the same syntax and semantics that millions of JavaScript developers know today. Use existing JavaScript code, incorporate popular JavaScript libraries, and call TypeScript code from JavaScript.",
+          "TypeScript compiles to clean, simple JavaScript code which runs on any browser, in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer).",
+          "### Strong tools for large apps",
+          "Types enable JavaScript developers to use highly-productive development tools and practices like static checking and code refactoring when developing JavaScript applications.",
+          "Types are optional, and type inference allows a few type annotations to make a big difference to the static verification of your code. Types let you define interfaces between software components and gain insights into the behavior of existing JavaScript libraries.",
+          "### State of the art JavaScript",
+          "TypeScript offers support for the latest and evolving JavaScript features, including those from ECMAScript 2015 and future proposals, like async functions and decorators, to help build robust components.",
+          "These features are available at development time for high-confidence app development, but are compiled into simple JavaScript that targets ECMAScript 3 (or newer) environments."
+        ]
+      }
+    ]
+  },
+  {
+    "title": "CSS preprocessing",
+    "values": [
+      {
+        "name": "CSS (no preprocessors)",
+        "logo": "/assets/imgs/css.png",
+        "description": [
+          "Good old CSS with all the features and quirks we love and hate.",
+          "",
+          "No preprocessing on the CSS code. You'll get (almost) your code on the browser.",
+          "",
+          "It allows you to use the exact level of syntax depending on your browsers requirements."
+        ]
+      },
+      {
+        "name": "Sass",
+        "logo": "/assets/imgs/sass.png",
+        "description": [
+          "### CSS Compatible",
+          "Sass is completely compatible with all versions of CSS. We take this compatibility seriously, so that you can seamlessly use any available CSS libraries.",
+          "### Feature Rich",
+          "Sass boasts more features and abilities than any other CSS extension language out there. The Sass Core Team has worked endlessly to not only keep up, but stay ahead.",
+          "### Mature",
+          "Sass has been actively supported for over 9 years by its loving Core Team.",
+          "### Industry Approved",
+          "Over and over again, the industry is choosing Sass as the premier CSS extension language.",
+          "### Large Community",
+          "Sass is actively supported and developed by a consortium of several tech companies and hundreds of developers.",
+          "### Framework",
+          "There are endless number of frameworks built with Sass. Compass, Bourbon, and Susy just to name a few."
+        ]
+      },
+      {
+        "name": "Less",
+        "logo": "/assets/imgs/less.png",
+        "description": [
+          "Less is a CSS pre-processor, meaning that it extends the CSS language, adding features that allow variables, mixins, functions and many other techniques that allow you to make CSS that is more maintainable, themable and extendable.",
+          "",
+          "Less runs inside Node, in the browser and inside Rhino. There are also many 3rd party tools that allow you to compile your files and watch for changes. The quickest place for first experiments with less is our online editor."
+        ]
+      }
+    ]
   }
 ]
