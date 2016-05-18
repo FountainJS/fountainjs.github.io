@@ -1,5 +1,6 @@
 .title {
-  background-color: $blue;
+  // background-color: $blue;
+  background-color: $gulpRed;
   color: $white;
   text-align: center;
 
@@ -28,20 +29,35 @@
 
 .title-logo {
   flex: 1;
-  width: 50%;
-  height: 20rem;
+  height: 18rem;
 
   img {
     height: 100%;
+    border: 1rem solid white;
+    border-radius: 50%;
+
+    &.gulp-angular-logo {
+      border: none;
+    }
   }
 
   &.small {
     height: 8rem;
+
+    img {
+      border-width: .5rem;
+    }
   }
 }
 
-.gulp-angular-logo {
-  border-radius: 1rem;
+.tagline {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+
+.yeoman-logo {
+  float: right;
 }
 
 .options h3 {
@@ -104,4 +120,12 @@
   font-family: $parisish;
   font-size: 2rem;
   margin: 0;
+}
+
+.option-description h3 {
+  text-align: left;
+  font-family: $roboto;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
 }

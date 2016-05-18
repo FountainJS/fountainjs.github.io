@@ -1,13 +1,19 @@
+/* eslint "react/no-danger": 0 */
+
 import _ from 'lodash';
 import React, {Component, PropTypes} from 'react';
 import OptionValue from './option-value';
+import marked from '../../marked';
 
 export default class Option extends Component {
   description() {
     if (_.isNumber(this.props.selected)) {
+      const content = this.props.values[this.props.selected].description;
+      const markup = marked(content.join('\n'));
+
       return (
         <div className="option-description">
-          <p>{this.props.values[this.props.selected].description}</p>
+          <p dangerouslySetInnerHTML={{__html: markup}}></p>
         </div>
       );
     }

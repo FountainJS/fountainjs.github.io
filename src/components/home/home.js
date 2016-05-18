@@ -1,6 +1,8 @@
 import {pick} from 'lodash';
 import React, {Component, PropTypes} from 'react';
 import Title from './title';
+import Tagline from './tagline';
+import WhatItIs from './whatitis';
 import Usage from './usage';
 import Options from './options';
 import {fetchOptions} from '../../redux/actions/home';
@@ -24,6 +26,8 @@ export default class Home extends Component {
     return (
       <div>
         <Title/>
+        <Tagline/>
+        <WhatItIs/>
         <Usage/>
         <Options {...optionsProps}/>
       </div>
