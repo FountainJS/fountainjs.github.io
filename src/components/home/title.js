@@ -11,7 +11,7 @@ export default class Title extends Component {
             </h1>
           </div>
           <div className="title-logo">
-            <img src="/assets/imgs/artworks/foutainjs-logo6-large-machine.png"/>
+            <img src="/assets/imgs/artworks/fountainjs-logo6-machine.png"/>
           </div>
         </div>
       </div>

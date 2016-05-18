@@ -97,19 +97,12 @@ header a {
 }
 
 footer {
+  margin-top: 2rem;
   padding: 0.5rem;
   font-size: 1rem;
-  background-color: $blue;
+  background-color: $black;
   text-align: center;
   color: white;
-
-  a {
-    color: $black;
-
-    &:hover {
-      color: $lightBlue;
-    }
-  }
 }
 
 .container {
