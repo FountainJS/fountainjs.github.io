@@ -5,17 +5,40 @@
       {
         "name": "React",
         "logo": "/assets/imgs/react.png",
-        "description": "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee."
+        "description": [
+          "### Just The UI",
+          "Lots of people use React as the V in MVC. Since React makes no assumptions about the rest of your technology stack, it's easy to try it out on a small feature in an existing project.",
+          "### Virtual DOM",
+          "React abstracts away the DOM, giving a simpler programming model and better performance. React can also render on the server using Node, and it can power native apps using React Native.",
+          "### Data Flow",
+          "React implements one-way reactive data flow which reduces boilerplate and is easier to reason about than traditional data binding."
+        ]
       },
       {
         "name": "Angular 1",
         "logo": "/assets/imgs/angular1.png",
-        "description": "My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?"
+        "description": [
+          "### Why AngularJS?",
+          "HTML is great for declaring static documents, but it falters when we try to use it for declaring dynamic views in web-applications. AngularJS lets you extend HTML vocabulary for your application. The resulting environment is extraordinarily expressive, readable, and quick to develop.",
+          "### Alternatives",
+          "Other frameworks deal with HTML’s shortcomings by either abstracting away HTML, CSS, and/or JavaScript or by providing an imperative way for manipulating the DOM. Neither of these address the root problem that HTML was not designed for dynamic views.",
+          "### Extensibility",
+          "AngularJS is a toolset for building the framework most suited to your application development. It is fully extensible and works well with other libraries. Every feature can be modified or replaced to suit your unique development workflow and feature needs. Read on to find out how."
+        ]
       },
       {
         "name": "Angular 2",
         "logo": "/assets/imgs/angular2.png",
-        "description": "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing."
+        "description": [
+          "### Develop Across All Platforms",
+          "Learn one way to build applications with Angular and reuse your code and abilities to build apps for any deployment target. For web, mobile web, native mobile and native desktop.",
+          "### Speed & Performance",
+          "Achieve the maximum speed possible on the Web Platform today, and take it further, via Web Workers and server-side rendering.",
+          "",
+          "Angular puts you in control over scalability. Meet huge data requirements by building data models on RxJS, Immutable.js or another push-model.",
+          "### Incredible Tooling",
+          "Build features quickly with simple, declarative templates. Extend the template language with your own components and use a wide array of existing components. Get immediate Angular-specific help and feedback with nearly every IDE and editor. All this comes together so you can focus on building amazing apps rather than trying to make the code work."
+        ]
       }
     ]
   },
@@ -25,17 +48,42 @@
       {
         "name": "Webpack and NPM",
         "logo": "/assets/imgs/webpack.png",
-        "description": "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing."
+        "description": [
+          "### Why another module bundler?",
+          "Existing module bundlers are not well suited for big projects (big single page applications). The most pressing reason for developing another module bundler was Code Splitting and that static assets should fit seamlessly together through modularization.",
+          "",
+          "I tried to extend existing module bundlers, but it wasn’t possible to achieve all goals.",
+          "### Goals",
+          "- Split the dependency tree into chunks loaded on demand",
+          "- Keep initial loading time low",
+          "- Every static asset should be able to be a module",
+          "- Ability to integrate 3rd-party libraries as modules",
+          "- Ability to customize nearly every part of the module bundler",
+          "- Suited for big projects"
+        ]
       },
       {
         "name": "SystemJS and JSPM",
         "logo": "/assets/imgs/systemjs.png",
-        "description": "Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends."
+        "description": [
+          "Universal dynamic module loader - loads ES6 modules, AMD, CommonJS and global scripts in the browser and NodeJS. Works with both Traceur and Babel.",
+          "",
+          "- Loads any module format with exact circular reference and binding support.",
+          "- Loads ES6 modules compiled into the System.register bundle format for production, maintaining circular references support.",
+          "- Supports RequireJS-style map, paths, bundles and global shims.",
+          "- Loader plugins allow loading assets through the module naming system such as CSS, JSON or images."
+        ]
       },
       {
         "name": "No modules and Bower",
         "logo": "/assets/imgs/bower.png",
-        "description": "Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb."
+        "description": [
+          "Web sites are made of lots of things — frameworks, libraries, assets, and utilities. Bower manages all these things for you.",
+          "",
+          "Keeping track of all these packages and making sure they are up to date (or set to the specific versions you need) is tricky. Bower to the rescue!",
+          "",
+          "Bower can manage components that contain HTML, CSS, JavaScript, fonts or even image files. Bower doesn’t concatenate or minify code or do anything else - it just installs the right versions of the packages you need and their dependencies."
+        ]
       }
     ]
   }

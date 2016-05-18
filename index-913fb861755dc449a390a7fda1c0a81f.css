@@ -121,7 +121,7 @@ pre[class*="language-"] {
 	cursor: help;
 }
 .title {
-  background-color: #5AADBB;
+  background-color: #cf4646;
   color: #ffffff;
   text-align: center; }
   .title .container {
@@ -143,15 +143,25 @@ pre[class*="language-"] {
 
 .title-logo {
   flex: 1;
-  width: 50%;
-  height: 20rem; }
+  height: 18rem; }
   .title-logo img {
-    height: 100%; }
+    height: 100%;
+    border: 1rem solid white;
+    border-radius: 50%; }
+    .title-logo img.gulp-angular-logo {
+      border: none; }
   .title-logo.small {
     height: 8rem; }
+    .title-logo.small img {
+      border-width: .5rem; }
 
-.gulp-angular-logo {
-  border-radius: 1rem; }
+.tagline {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: normal; }
+
+.yeoman-logo {
+  float: right; }
 
 .options h3 {
   text-align: center;
@@ -200,6 +210,13 @@ pre[class*="language-"] {
   font-family: "Parisish", "Open Sans", sans-serif;
   font-size: 2rem;
   margin: 0; }
+
+.option-description h3 {
+  text-align: left;
+  font-family: "Roboto", "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: .5rem; }
 
 .doc {
   display: flex;
@@ -262,7 +279,9 @@ h2 {
   margin-bottom: .5rem; }
 
 h3 {
-  font-size: 2rem; }
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: .5rem; }
 
 a {
   text-decoration: none;
