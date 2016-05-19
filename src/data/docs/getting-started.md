@@ -38,6 +38,6 @@ This generators can be used directly to bypass the framework question.
 
 ## [Usage](usage)
 
-## [Changelog](https://github.com/FountainJS/generator-fountain-webapp)
+## [Changelog](https://github.com/FountainJS/generator-fountain-webapp/releases)
 
 ## [Contributing](contributing)
