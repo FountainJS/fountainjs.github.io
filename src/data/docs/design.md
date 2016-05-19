@@ -68,3 +68,7 @@ The main purpose of the fountain generator base is to configure as options the m
 As an early design choice, we chose to force the minimum Node version to 4 for the whole FountainJS.
 
 Thereby we have the freedom to use all ES6 features the new versions of Node allows.
+
+# NPM 3+
+
+We prefer NPM version to 3 to manage our dependencies.
