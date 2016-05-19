@@ -1,26 +1,27 @@
 Usage
 =====
 
+
 ## Requirements
-You need at least Node `v4.0.0` and npm `2`.
+You need at least Node `v4.0.0` and NPM `3`.
+
 
 ## Create your project
-You only need the tool(s) corresponding with the technologies you'll choose with the generator.  
-Install the needed tools within yo, jspm, typings , bower.
+Install the needed tools:
 
 ```sh
-$ npm install -g yo jspm typings bower
+$ npm i -g yo
 ```
 
 Install `generator-fountain-webapp`
 
 ```sh
-$ npm install -g generator-fountain-webapp
+$ npm i -g generator-fountain-webapp
 ```
 Make a new directory, and cd into it:
 
 ```sh
-mkdir my-new-project && cd $_
+mkdir my-new-project && cd my-new-project
 ```
 
 Run yo fountain-webapp:
@@ -34,18 +35,31 @@ yo fountain-webapp
 
 * `--skip-cache` Do not remember prompt answers, default is `false`
 * `--skip-install` Do not automatically install dependencies, default is `false`
-* `--framework` Description for framework
-* `--modules` Description for modules manager
-* `--css` Description for css preprocessor
-* `--js` Description for js preprocessor
+* `--framework=(react|angular2|angular1)` Select a framework
+* `--modules=(wepack|systemjs|inject)` Select a modules manager
+* `--js=(babel|typescript|js)` Select a JS preprocessor
+* `--css=(scss|less|css)` Select a CSS preprocessor
 
-## Use Gulp tasks
 
-- `gulp` or `gulp build` to build an optimized version of your application in /dist
-- `gulp serve` to launch a browser sync server on your source files
-- `gulp serve:dist` to launch a server on your optimized application
-- `gulp test` to launch your unit tests with Karma
-- `gulp test:auto` to launch your unit tests with Karma in watch mode
+## Use NPM scripts
+
+- `npm run build` to build an optimized version of your application in /dist
+- `npm run serve` to launch a browser sync server on your source files
+- `npm run serve:dist` to launch a server on your optimized application
+- `npm run test` to launch your unit tests with Karma
+- `npm run test:auto` to launch your unit tests with Karma in watch mode
+
+
+## Or Gulp tasks
+
+If you have [`gulp-cli`](https://www.npmjs.com/package/gulp-cli) installed in global packages you can use equivalent:
+
+- `gulp` or `gulp build`
+- `gulp serve`
+- `gulp serve:dist`
+- `gulp test`
+- `gulp test:auto`
+
 
 ## Directory structure
 
@@ -65,21 +79,18 @@ Every component of the app get its own directory which contains the component co
 │    ├──  gulp.conf.js
 │    ├──  karma-auto.conf.js
 │    ├──  karma.conf.js
-│    ├──  ts.conf.json
-│    ├──  tslint.conf.json
-│    ├──  webpack.conf.js
-│    ├──  webpack-dist.conf.js
-│    ├──  webpack-test.conf.js
-│    └──  karma.conf.js
+│    ├──  webpack-dist.conf.js (optional)
+│    └──  webpack-test.conf.js (optional)
+│    └──  webpack.conf.js (optional)
 │
 ├──  gulp_tasks/
 │    ├──  browsersync.js
-│    ├──  build.js
+│    ├──  build.js (optional)
 │    ├──  inject.js (optional)
 │    ├──  karma.js
 │    ├──  misc.js
-│    ├──  scripts.js
-│    ├──  styles.js
+│    ├──  scripts.js (optional)
+│    ├──  styles.js (optional)
 │    ├──  systemjs.js (optional)
 │    └──  webpack.js (optional)
 │
@@ -112,13 +123,15 @@ Every component of the app get its own directory which contains the component co
 ├──  .babelrc (optional)
 ├──  .editorconfig
 ├──  .gitignore
-├──  .eslintrc
 ├──  bower.json (optional)
 ├──  gulpfile.js
 ├──  jspm.config.js (optional)
 ├──  jspm.browser.js (optional)
-└──  package.json
+├──  package.json
+├──  tslint.json (optional)
+└──  typings.json (optional)
 </pre>
+
 
 ## Configuration
 
@@ -127,9 +140,8 @@ You can find the configuration files in `conf/`.
 * *browsersync.conf(-dist).js*: define which folder to serve
 * *gulp.conf.js*: contains the variables used in other gulp files which defines tasks
 * *karma(-auto).conf.js*: contains Karma configuration for unit tests
-* *ts.conf.js*: TypeScript compiler configuration regarding the framework used
-* *tslint.conf.json*: TypeScript linter rules
 * *webpack(-dist | test).js*: Webpack configuration with definition of loaders and plugins regarding the environment (dev, dist or test)
+
 
 ## Gulpfile
 
@@ -140,7 +152,7 @@ It's made possible by the new Gulp 4 which allow to define precise task series a
 
 ## Questions the generator will ask
 
-- *Framework*: React, Angular 1, Angular 2
+- *Framework*: React, Angular 2, Angular 1
 - *Modules manager*: Webpack with NPM, SystemJS with JSPM, None with Bower injection
 - *CSS preprocessor*: SASS, Less, CSS
 - *JS preprocessor*: ES2015 with Babel, Pure old JavaScript, TypeScript

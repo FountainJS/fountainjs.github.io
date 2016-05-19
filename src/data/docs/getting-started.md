@@ -3,7 +3,7 @@
 > No matter what framework or module management you want to use, we got you covered with a cutting edge working configuration.
 
 > We use [Gulp 4](http://gulpjs.com/) as a task manager but we'll ask you questions about:
-- Framework: React, Angular 1, Angular 2, none
+- Framework: React, Angular 2, Angular 1
 - Modules management: Webpack, SystemJS, none
 - JS preprocessor: Babel, TypeScript, none
 - CSS preprocessor: Sass, Less, none
@@ -36,45 +36,8 @@ This generators can be used directly to bypass the framework question.
 [![SystemJS](/assets/imgs/systemjs.png)](https://github.com/FountainJS/generator-fountain-systemjs)
 [![Bower](/assets/imgs/bower.png)](https://github.com/FountainJS/generator-fountain-inject)
 
+## [Usage](usage)
 
-## Usage
+## [Changelog](https://github.com/FountainJS/generator-fountain-webapp/releases)
 
-### Requirement Node 4+
-This generator is targeted to be used with Node >= 4.0.0. You can check your version number with the command
-```
-node --version
-```
-If you have a version 0.x, please update on [nodejs.org](https://nodejs.org/en/download/).
-
-### Install
-
-##### Install required tools `yo` and `gulp-cli`:
-```
-npm install -g yo gulp-cli
-```
-
-##### Install `generator-fountain-webapp`:
-```
-npm install -g generator-fountain-webapp
-```
-
-
-### Run
-
-##### Create a new directory, and go into:
-```
-mkdir my-new-project && cd $_
-```
-
-##### Run `yo fountain-webapp`, and select desired technologies:
-```
-yo fountain-webapp
-```
-
-## Changelog
-
-[All changes listed in the GitHub releases](https://github.com/FountainJS/generator-fountain-webapp)
-
-## Contributing
-
-[Guidelines](CONTRIBUTING.md)
+## [Contributing](contributing)
