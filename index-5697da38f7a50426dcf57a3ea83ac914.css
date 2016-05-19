@@ -120,41 +120,6 @@ pre[class*="language-"] {
 .token.entity {
 	cursor: help;
 }
-.title {
-  background-color: #cf4646;
-  color: #ffffff;
-  text-align: center; }
-  .title .container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 1rem; }
-  .title h1 {
-    margin: 1rem 0; }
-
-.title-text {
-  flex: 2;
-  width: 50%; }
-
-.title-text-title {
-  font-size: 4rem;
-  font-weight: normal;
-  font-family: "Parisish", "Open Sans", sans-serif; }
-
-.title-logo {
-  flex: 1;
-  height: 18rem; }
-  .title-logo img {
-    height: 100%;
-    border: 1rem solid white;
-    border-radius: 50%; }
-    .title-logo img.gulp-angular-logo {
-      border: none; }
-  .title-logo.small {
-    height: 8rem; }
-    .title-logo.small img {
-      border-width: .5rem; }
-
 .tagline {
   text-align: center;
   font-size: 1.8rem;
@@ -185,10 +150,13 @@ pre[class*="language-"] {
 
 .option-bloc {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   border: 1px solid #1f1f1f;
-  border-radius: .5rem; }
+  border-radius: .5rem;
+  flex-direction: column; }
+  @media (min-width: 768px) {
+    .option-bloc {
+      flex-direction: row; } }
 
 .option-value {
   width: 12rem;
@@ -220,16 +188,29 @@ pre[class*="language-"] {
 
 .doc {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around; }
+  justify-content: space-around;
+  flex-direction: column; }
+  @media (min-width: 768px) {
+    .doc {
+      flex-direction: row; } }
 
 .doc-content {
   flex: 4;
-  width: 80%; }
+  width: 80%;
+  width: 100%;
+  order: 1; }
+  @media (min-width: 768px) {
+    .doc-content {
+      width: 80%;
+      order: 0; } }
 
 .doc-toc {
   flex: 1;
-  width: 20%; }
+  padding: 0;
+  width: 100%; }
+  @media (min-width: 768px) {
+    .doc-toc {
+      width: 20%; } }
 
 .doc-toc-item {
   list-style-type: none;
@@ -294,7 +275,10 @@ header {
   align-items: center;
   background-color: #1f1f1f;
   color: #ffffff;
-  height: 3rem; }
+  flex-direction: column; }
+  @media (min-width: 992px) {
+    header {
+      flex-direction: row; } }
 
 header a {
   color: #ffffff; }
@@ -304,14 +288,22 @@ header a {
 .header-title {
   flex: 1;
   font-size: 1.5rem;
-  margin: 0 1rem; }
+  margin: .3rem 1rem;
+  text-align: center; }
+  @media (min-width: 992px) {
+    .header-title {
+      text-align: left; } }
 
 .header-links {
   flex: 1;
   text-align: right;
-  margin: 0 1rem; }
+  margin: .3rem 1rem;
+  text-align: center; }
   .header-links a {
     margin-left: 1rem; }
+  @media (min-width: 992px) {
+    .header-links {
+      text-align: right; } }
 
 .header-social img {
   height: 2rem;
@@ -326,7 +318,9 @@ footer {
   color: white; }
 
 .container {
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 1rem;
+  overflow: hidden; }
   @media (min-width: 768px) {
     .container {
       width: 720px; } }
@@ -336,3 +330,56 @@ footer {
   @media (min-width: 1200px) {
     .container {
       width: 1140px; } }
+
+.title {
+  background-color: #cf4646;
+  color: #ffffff;
+  text-align: center; }
+  .title .container {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    flex-direction: column; }
+    @media (min-width: 768px) {
+      .title .container {
+        flex-direction: row; } }
+  .title h1 {
+    margin: 1rem 0; }
+
+.title-text {
+  flex: 2;
+  width: 100%;
+  order: 1; }
+  @media (min-width: 768px) {
+    .title-text {
+      width: 50%;
+      order: 0; } }
+
+.title-text-title {
+  font-size: 4rem;
+  font-weight: normal;
+  font-family: "Parisish", "Open Sans", sans-serif; }
+
+.title-logo {
+  flex: 1; }
+
+.title-logo-container {
+  height: 12rem;
+  width: 12rem; }
+  @media (min-width: 480px) {
+    .title-logo-container {
+      height: 18rem;
+      width: 18rem; } }
+  .title-logo-container img {
+    height: 100%;
+    width: 100%;
+    border: 1rem solid white;
+    border-radius: 50%; }
+    .title-logo-container img.gulp-angular-logo {
+      border: none; }
+  .title-logo-container.small {
+    margin: auto;
+    height: 8rem;
+    width: 8rem; }
+    .title-logo-container.small img {
+      border-width: .5rem; }
