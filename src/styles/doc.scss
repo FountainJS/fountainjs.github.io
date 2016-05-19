@@ -1,17 +1,33 @@
 .doc {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
+
+  flex-direction: column;
+  @media (min-width: $screen-sm) {
+    flex-direction: row;
+  }
 }
 
 .doc-content {
   flex: 4;
   width: 80%;
+
+  width: 100%;
+  order: 1;
+  @media (min-width: $screen-sm) {
+    width: 80%;
+    order: 0;
+  }
 }
 
 .doc-toc {
   flex: 1;
-  width: 20%;
+  padding: 0;
+
+  width: 100%;
+  @media (min-width: $screen-sm) {
+    width: 20%;
+  }
 }
 
 .doc-toc-item {

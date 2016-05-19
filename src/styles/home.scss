@@ -33,10 +33,14 @@
 
 .option-bloc {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   border: 1px solid $black;
   border-radius: .5rem;
+
+  flex-direction: column;
+  @media (min-width: $screen-sm) {
+    flex-direction: row;
+  }
 }
 
 .option-value {

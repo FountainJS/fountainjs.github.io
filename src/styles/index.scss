@@ -64,7 +64,11 @@ header {
   align-items: center;
   background-color: $black;
   color: $white;
-  height: 3rem;
+
+  flex-direction: column;
+  @media (min-width: $screen-md) {
+    flex-direction: row;
+  }
 }
 
 header a {
@@ -78,16 +82,26 @@ header a {
 .header-title {
   flex: 1;
   font-size: 1.5rem;
-  margin: 0 1rem;
+  margin: .3rem 1rem;
+
+  text-align: center;
+  @media (min-width: $screen-md) {
+    text-align: left;
+  }
 }
 
 .header-links {
   flex: 1;
   text-align: right;
-  margin: 0 1rem;
+  margin: .3rem 1rem;
 
   a {
     margin-left: 1rem;
+  }
+
+  text-align: center;
+  @media (min-width: $screen-md) {
+    text-align: right;
   }
 }
 
@@ -116,19 +130,24 @@ footer {
     width: $container-lg;
   }
   margin: 0 auto;
+  padding: 0 1rem;
+  overflow: hidden;
 }
 
 .title {
-  // background-color: $blue;
   background-color: $gulpRed;
   color: $white;
   text-align: center;
 
   .container {
     display: flex;
-    flex-direction: row;
     align-items: center;
     padding: 1rem;
+
+    flex-direction: column;
+    @media (min-width: $screen-sm) {
+      flex-direction: row;
+    }
   }
 
   h1 {
@@ -138,7 +157,13 @@ footer {
 
 .title-text {
   flex: 2;
-  width: 50%;
+
+  width: 100%;
+  order: 1;
+  @media (min-width: $screen-sm) {
+    width: 50%;
+    order: 0;
+  }
 }
 
 .title-text-title {
@@ -152,8 +177,12 @@ footer {
 }
 
 .title-logo-container {
-  height: 18rem;
-  width: 18rem;
+  height: 12rem;
+  width: 12rem;
+  @media (min-width: $screen-xs) {
+    height: 18rem;
+    width: 18rem;
+  }
 
   img {
     height: 100%;

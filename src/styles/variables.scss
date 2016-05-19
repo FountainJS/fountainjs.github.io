@@ -22,3 +22,6 @@ $screen-lg: 1200px;
 $container-sm: 720px;
 $container-md: 940px;
 $container-lg: 1140px;
+
+// Medias
+$media-xs: "only screen and (max-width : $screen-xs)";
