@@ -28,7 +28,7 @@ Fountain is a new Yeoman generator allowing you to choose the most structuring t
 
 ### Developer eXperience
 
-The tooling proposed is focused on offering the best developer experience in order that modern Web development benefits from the extremly dynamic ecosystem instead of creating fatigue.
+The proposed tooling is focused on offering the best developer experience. The extremly dynamic ecosystem of the modern Web development has to be an asset instead of creating fatigue.
 
 Whatever the options you choose, you'll get a development server embedded, live reload enabled, even hot module reload when possible.
 
@@ -40,7 +40,7 @@ The main point of Fountain is to deliver a stable project whatever the very diff
 
 ### Composition
 
-From the user point of view, Fountain is a very complete generator. From the inside, it's a complete ecosystem of various and specialized generators. This architecture will allow easier development and extension.
+From the user point of view, Fountain is a very complete generator. From the inside, it's a full ecosystem of various and specialized generators. This architecture will allow easier development and extension.
 
 ## For the gulp-angular users
 
@@ -73,13 +73,13 @@ We intend to generalize that idea and offer a TodoMVC app as a generic option.
 ### More generators
 
 We design Fountain to be extensible. We intend to use that in the future to address some important technologies or sectors we don't address for now:
-- Isomorphic / Univesal apps
+- Isomorphic / Universal apps
 - Full stack projects (Node, PHP, Java...)
 - Mobile (Ionic, React Native / NativeScript...)
 
 ### Component generators
 
-That's a very old story. It has been one of the first issue of gulp-angular and it is still not closed.
+That's a very old story. It has been one of the first issues of gulp-angular and it is still not closed.
 
 We still don't offer component generators of sub generators to create some code after the first project generation.
 
