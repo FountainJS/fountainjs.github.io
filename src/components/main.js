@@ -2,25 +2,12 @@ import React, {Component, PropTypes} from 'react';
 import {Header} from './header';
 import {Footer} from './footer';
 
-const styles = {
-  container: {
-    display: 'flex',
-    flexDirection: 'column',
-    minHeight: '100%'
-  },
-  main: {
-    flex: 1,
-    display: 'flex',
-    flexDirection: 'column'
-  }
-};
-
 export default class Main extends Component {
   render() {
     return (
-      <div style={styles.container}>
+      <div className="main-container">
         <Header/>
-        <main style={styles.main}>
+        <main className="main-main">
           {this.props.children}
         </main>
         <Footer/>

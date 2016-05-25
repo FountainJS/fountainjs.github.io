@@ -5,7 +5,9 @@ export default class Tagline extends Component {
     return (
       <div className="container">
         <h2>What's Fountain</h2>
-        <img className="yeoman-logo" src="/assets/imgs/yeoman.png"/>
+        <a href="http://yeoman.io" target="_blank">
+          <img alt="Yeoman Logo" className="yeoman-logo" src="/assets/imgs/yeoman.png"/>
+        </a>
         <h3>Options</h3>
         <p>Fountain is a new Yeoman generator allowing the user to choose the most structurant technologies you'll use:</p>
         <ul>

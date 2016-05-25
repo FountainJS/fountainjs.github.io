@@ -21,13 +21,13 @@ export class Header extends Component {
             Blog
           </Link>
           <a className="header-social" href="https://github.com/FountainJS/generator-fountain-webapp">
-            <img src="/assets/imgs/social-github.svg"/>
+            <img alt="GitHub Link" src="/assets/imgs/social-github.svg"/>
           </a>
           <a className="header-social" href="https://twitter.com/yeomanfountain">
-            <img src="/assets/imgs/social-twitter.svg"/>
+            <img alt="Twitter Link" src="/assets/imgs/social-twitter.svg"/>
           </a>
           <a className="header-social" href="https://fountain-slack.herokuapp.com">
-            <img src="/assets/imgs/social-slack.png"/>
+            <img alt="Slack Link" src="/assets/imgs/social-slack.png"/>
           </a>
         </p>
       </header>

@@ -19,7 +19,7 @@ export default class OptionValue extends Component {
     return (
       <div className={classes.join(' ')} onClick={this.select}>
         <div className="option-logo">
-          <img src={logo}/>
+          <img alt={`${name} Logo`} src={logo}/>
           <p className="option-name">{name}</p>
         </div>
       </div>
