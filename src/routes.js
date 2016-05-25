@@ -10,6 +10,8 @@ import GulpAngularContent from './redux/containers/gulp-angular-content';
 import Blog from './components/blog/blog';
 import Summaries from './redux/containers/summaries';
 import Post from './redux/containers/post';
+import Codelab from './redux/containers/codelab';
+import Step from './redux/containers/step';
 
 export default (
   <Route component={Main}>
@@ -17,6 +19,10 @@ export default (
     <Route path="/doc" component={Doc}>
       <IndexRoute component={DocContent}/>
       <Route path=":doc" component={DocContent}/>
+    </Route>
+    <Route path="/codelab" component={Codelab}>
+      <IndexRoute component={Step}/>
+      <Route path=":step" component={Step}/>
     </Route>
     <Route path="/gulp-angular" component={GulpAngular}>
       <IndexRoute component={GulpAngularContent}/>
