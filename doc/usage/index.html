@@ -35,7 +35,136 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div id="root">A complete set of Yeoman generators to start all your frontend projects.</div>
+    
+    <div id="root"><div style="display:flex;flex-direction:column;min-height:100%;" data-reactroot="" data-reactid="1" data-react-checksum="1126617709"><header data-reactid="2"><p class="header-title" data-reactid="3"><a href="/" data-reactid="4">Yeoman Fountain generators</a></p><p class="header-links" data-reactid="5"><a href="/doc" data-reactid="6">Documentation</a><a href="/gulp-angular" data-reactid="7">gulp-angular</a><a href="/blog" data-reactid="8">Blog</a><a class="header-social" href="https://github.com/FountainJS/generator-fountain-webapp" data-reactid="9"><img src="/assets/imgs/social-github.svg" data-reactid="10"/></a><a class="header-social" href="https://twitter.com/yeomanfountain" data-reactid="11"><img src="/assets/imgs/social-twitter.svg" data-reactid="12"/></a><a class="header-social" href="https://fountain-slack.herokuapp.com" data-reactid="13"><img src="/assets/imgs/social-slack.png" data-reactid="14"/></a></p></header><main style="flex:1;display:flex;flex-direction:column;" data-reactid="15"><div data-reactid="16"><div class="title" data-reactid="17"><div class="container" data-reactid="18"><div class="title-text" data-reactid="19"><h1 class="title-text-title" data-reactid="20">Fountain Documentation</h1></div><div class="title-logo" data-reactid="21"><div class="title-logo-container small" data-reactid="22"><img src="/assets/imgs/artworks/fountainjs-logo6-badge.png" data-reactid="23"/></div></div></div></div><div class="container doc" data-reactid="24"><div class="doc-content" data-reactid="25"><div data-reactid="26"><h1 id="usage">Usage</h1>
+<h2 id="requirements">Requirements</h2>
+<p>You need at least Node <code>v4.0.0</code> and NPM <code>3</code>.</p>
+<h2 id="create-your-project">Create your project</h2>
+<p>Install the needed tools:</p>
+<pre class="language-bash"><code>$ npm i -g yo</code></pre><p>Install <code>generator-fountain-webapp</code></p>
+<pre class="language-bash"><code>$ npm i -g generator-fountain-webapp</code></pre><p>Make a new directory, and cd into it:</p>
+<pre class="language-bash"><code><span class="token function" >mkdir</span> my-new-project <span class="token operator" >&amp;&amp;</span> <span class="token function" >cd</span> my-new-project</code></pre><p>Run yo fountain-webapp:</p>
+<pre class="language-bash"><code>yo fountain-webapp</code></pre><h2 id="yo-options">Yo options</h2>
+<p><code>yo fountain-generator --help</code> or <code>yo fountain-generator -h</code> for help. All options are not required. If not provided, default values will be used.</p>
+<ul>
+<li><code>--skip-cache</code> Do not remember prompt answers, default is <code>false</code></li>
+<li><code>--skip-install</code> Do not automatically install dependencies, default is <code>false</code></li>
+<li><code>--framework=(react|angular2|angular1)</code> Select a framework</li>
+<li><code>--modules=(wepack|systemjs|inject)</code> Select a modules manager</li>
+<li><code>--js=(babel|typescript|js)</code> Select a JS preprocessor</li>
+<li><code>--css=(scss|less|css)</code> Select a CSS preprocessor</li>
+</ul>
+<h2 id="use-npm-scripts">Use NPM scripts</h2>
+<ul>
+<li><code>npm run build</code> to build an optimized version of your application in /dist</li>
+<li><code>npm run serve</code> to launch a browser sync server on your source files</li>
+<li><code>npm run serve:dist</code> to launch a server on your optimized application</li>
+<li><code>npm run test</code> to launch your unit tests with Karma</li>
+<li><code>npm run test:auto</code> to launch your unit tests with Karma in watch mode</li>
+</ul>
+<h2 id="or-gulp-tasks">Or Gulp tasks</h2>
+<p>If you have <a href="https://www.npmjs.com/package/gulp-cli"><code>gulp-cli</code></a> installed in global packages you can use equivalent:</p>
+<ul>
+<li><code>gulp</code> or <code>gulp build</code></li>
+<li><code>gulp serve</code></li>
+<li><code>gulp serve:dist</code></li>
+<li><code>gulp test</code></li>
+<li><code>gulp test:auto</code></li>
+</ul>
+<h2 id="directory-structure">Directory structure</h2>
+<p>Every component of the app get its own directory which contains the component code (depending on the framework, it can be <code>*.(js|ts)</code> or/and <code>*.component.(js|ts)</code> or/and <code>*.controller.(js|ts)</code> or/and <code>*.service.(js|ts)</code> and <code>*.spec.(js|ts)</code>.</p>
+<ul>
+<li>If you are coding in Angular 1.4 style, you can read
+<a href="https://docs.google.com/document/d/1XXMvReO8-Awi1EZXAXS4PzDzdNvV6pGcuaF4Q9821Es/pub">Best Practice Recommendations for Angular App Structure</a>.</li>
+<li>Concerning Angular ≥ 1.5 and Angular 2, you can read <a href="https://mgechev.github.io/angular2-style-guide/">Angular 2 Style Guide</a>.</li>
+<li>For React, you can read <a href="https://github.com/airbnb/javascript/tree/master/react">Airbnb React Style Guide</a>.</li>
+</ul>
+<p><strong>WARNING</strong>: this directory structure implies you are using <code>Techs</code> template of the app. If not, it will be slightly different.</p>
+<pre>
+├──  conf/
+│    ├──  browsersync-dist.conf.js
+│    ├──  browsersync.conf.js
+│    ├──  gulp.conf.js
+│    ├──  karma-auto.conf.js
+│    ├──  karma.conf.js
+│    ├──  webpack-dist.conf.js (optional)
+│    └──  webpack-test.conf.js (optional)
+│    └──  webpack.conf.js (optional)
+│
+├──  gulp_tasks/
+│    ├──  browsersync.js
+│    ├──  build.js (optional)
+│    ├──  inject.js (optional)
+│    ├──  karma.js
+│    ├──  misc.js
+│    ├──  scripts.js (optional)
+│    ├──  styles.js (optional)
+│    ├──  systemjs.js (optional)
+│    └──  webpack.js (optional)
+│
+├──  bower_components/ (optional)
+├──  jspm_packages/ (optional)
+├──  nodes_modules/
+├──  typings/ (optional)
+│
+├──  src/
+│   ├──  app/
+│   │   ├── techs/
+│   │   │   ├──  tech.(js|ts)
+│   │   │   ├──  tech.spec.(js|ts)
+│   │   │   ├──  techs.(js|ts)
+│   │   │   └──  techs.spec.(js|ts)
+│   │   │
+│   │   ├── footer.(js|ts)
+│   │   ├── footer.spec.(js|ts)
+│   │   ├── header.(js|ts)
+│   │   ├── header.spec.(js|ts)
+│   │   ├── main.(js|ts)
+│   │   ├── main.spec.(js|ts)
+│   │   ├── title.(js|ts)
+│   │   └── title.spec.(js|ts)
+│   │
+│   ├── index.html
+│   ├── index.(js|ts)
+│   └── index.(css|less|scss)
+│
+├──  .babelrc (optional)
+├──  .editorconfig
+├──  .gitignore
+├──  bower.json (optional)
+├──  gulpfile.js
+├──  jspm.config.js (optional)
+├──  jspm.browser.js (optional)
+├──  package.json
+├──  tslint.json (optional)
+└──  typings.json (optional)
+</pre>
+
+
+<h2 id="configuration">Configuration</h2>
+<p>You can find the configuration files in <code>conf/</code>.</p>
+<ul>
+<li><em>browsersync.conf(-dist).js</em>: define which folder to serve</li>
+<li><em>gulp.conf.js</em>: contains the variables used in other gulp files which defines tasks</li>
+<li><em>karma(-auto).conf.js</em>: contains Karma configuration for unit tests</li>
+<li><em>webpack(-dist | test).js</em>: Webpack configuration with definition of loaders and plugins regarding the environment (dev, dist or test)</li>
+</ul>
+<h2 id="gulpfile">Gulpfile</h2>
+<p>As the <code>gulp_tasks</code> folder contains all gulp tasks used by the project, the <code>gulpfile.js</code> centralize all processes by chaining the actual tasks.</p>
+<p>It&#39;s made possible by the new Gulp 4 which allow to define precise task series and parallelization.</p>
+<h2 id="questions-the-generator-will-ask">Questions the generator will ask</h2>
+<ul>
+<li><em>Framework</em>: React, Angular 2, Angular 1</li>
+<li><em>Modules manager</em>: Webpack with NPM, SystemJS with JSPM, None with Bower injection</li>
+<li><em>CSS preprocessor</em>: SASS, Less, CSS</li>
+<li><em>JS preprocessor</em>: ES2015 with Babel, Pure old JavaScript, TypeScript</li>
+<li><em>Sample app</em>: A working landing page, A simple Hello Word, A TodoMVC</li>
+</ul>
+</div></div><ul class="doc-toc" data-reactid="27"><li class="doc-toc-item" data-reactid="28"><a href="/doc/" data-reactid="29">Getting Started</a></li><li class="doc-toc-item active" data-reactid="30"><a href="/doc/usage" data-reactid="31">Usage</a></li><li class="doc-toc-item" data-reactid="32"><a href="/doc/design" data-reactid="33">Fountain Design</a></li><li class="doc-toc-item" data-reactid="34"><a href="/doc/contributing" data-reactid="35">Contributing</a></li></ul></div></div></main><footer data-reactid="36"><!-- react-text: 37 -->Build with ♥ by the <!-- /react-text --><a href="https://github.com/orgs/FountainJS/people" data-reactid="38">FountainJS team</a></footer></div></div>
+    <script>
+      window.__INITIAL_STATE__ = {"home":{"options":[],"selection":[],"loading":false},"doc":{"docs":[{"path":"","title":"Getting Started","file":"getting-started.md"},{"path":"usage","title":"Usage","file":"usage.md"},{"path":"design","title":"Fountain Design","file":"design.md"},{"path":"contributing","title":"Contributing","file":"contributing.md"}],"docsContent":[{"file":"usage.md","content":"<h1 id=\"usage\">Usage</h1>\n<h2 id=\"requirements\">Requirements</h2>\n<p>You need at least Node <code>v4.0.0</code> and NPM <code>3</code>.</p>\n<h2 id=\"create-your-project\">Create your project</h2>\n<p>Install the needed tools:</p>\n<pre class=\"language-bash\"><code>$ npm i -g yo</code></pre><p>Install <code>generator-fountain-webapp</code></p>\n<pre class=\"language-bash\"><code>$ npm i -g generator-fountain-webapp</code></pre><p>Make a new directory, and cd into it:</p>\n<pre class=\"language-bash\"><code><span class=\"token function\" >mkdir</span> my-new-project <span class=\"token operator\" >&amp;&amp;</span> <span class=\"token function\" >cd</span> my-new-project</code></pre><p>Run yo fountain-webapp:</p>\n<pre class=\"language-bash\"><code>yo fountain-webapp</code></pre><h2 id=\"yo-options\">Yo options</h2>\n<p><code>yo fountain-generator --help</code> or <code>yo fountain-generator -h</code> for help. All options are not required. If not provided, default values will be used.</p>\n<ul>\n<li><code>--skip-cache</code> Do not remember prompt answers, default is <code>false</code></li>\n<li><code>--skip-install</code> Do not automatically install dependencies, default is <code>false</code></li>\n<li><code>--framework=(react|angular2|angular1)</code> Select a framework</li>\n<li><code>--modules=(wepack|systemjs|inject)</code> Select a modules manager</li>\n<li><code>--js=(babel|typescript|js)</code> Select a JS preprocessor</li>\n<li><code>--css=(scss|less|css)</code> Select a CSS preprocessor</li>\n</ul>\n<h2 id=\"use-npm-scripts\">Use NPM scripts</h2>\n<ul>\n<li><code>npm run build</code> to build an optimized version of your application in /dist</li>\n<li><code>npm run serve</code> to launch a browser sync server on your source files</li>\n<li><code>npm run serve:dist</code> to launch a server on your optimized application</li>\n<li><code>npm run test</code> to launch your unit tests with Karma</li>\n<li><code>npm run test:auto</code> to launch your unit tests with Karma in watch mode</li>\n</ul>\n<h2 id=\"or-gulp-tasks\">Or Gulp tasks</h2>\n<p>If you have <a href=\"https://www.npmjs.com/package/gulp-cli\"><code>gulp-cli</code></a> installed in global packages you can use equivalent:</p>\n<ul>\n<li><code>gulp</code> or <code>gulp build</code></li>\n<li><code>gulp serve</code></li>\n<li><code>gulp serve:dist</code></li>\n<li><code>gulp test</code></li>\n<li><code>gulp test:auto</code></li>\n</ul>\n<h2 id=\"directory-structure\">Directory structure</h2>\n<p>Every component of the app get its own directory which contains the component code (depending on the framework, it can be <code>*.(js|ts)</code> or/and <code>*.component.(js|ts)</code> or/and <code>*.controller.(js|ts)</code> or/and <code>*.service.(js|ts)</code> and <code>*.spec.(js|ts)</code>.</p>\n<ul>\n<li>If you are coding in Angular 1.4 style, you can read\n<a href=\"https://docs.google.com/document/d/1XXMvReO8-Awi1EZXAXS4PzDzdNvV6pGcuaF4Q9821Es/pub\">Best Practice Recommendations for Angular App Structure</a>.</li>\n<li>Concerning Angular ≥ 1.5 and Angular 2, you can read <a href=\"https://mgechev.github.io/angular2-style-guide/\">Angular 2 Style Guide</a>.</li>\n<li>For React, you can read <a href=\"https://github.com/airbnb/javascript/tree/master/react\">Airbnb React Style Guide</a>.</li>\n</ul>\n<p><strong>WARNING</strong>: this directory structure implies you are using <code>Techs</code> template of the app. If not, it will be slightly different.</p>\n<pre>\n├──  conf/\n│    ├──  browsersync-dist.conf.js\n│    ├──  browsersync.conf.js\n│    ├──  gulp.conf.js\n│    ├──  karma-auto.conf.js\n│    ├──  karma.conf.js\n│    ├──  webpack-dist.conf.js (optional)\n│    └──  webpack-test.conf.js (optional)\n│    └──  webpack.conf.js (optional)\n│\n├──  gulp_tasks/\n│    ├──  browsersync.js\n│    ├──  build.js (optional)\n│    ├──  inject.js (optional)\n│    ├──  karma.js\n│    ├──  misc.js\n│    ├──  scripts.js (optional)\n│    ├──  styles.js (optional)\n│    ├──  systemjs.js (optional)\n│    └──  webpack.js (optional)\n│\n├──  bower_components/ (optional)\n├──  jspm_packages/ (optional)\n├──  nodes_modules/\n├──  typings/ (optional)\n│\n├──  src/\n│   ├──  app/\n│   │   ├── techs/\n│   │   │   ├──  tech.(js|ts)\n│   │   │   ├──  tech.spec.(js|ts)\n│   │   │   ├──  techs.(js|ts)\n│   │   │   └──  techs.spec.(js|ts)\n│   │   │\n│   │   ├── footer.(js|ts)\n│   │   ├── footer.spec.(js|ts)\n│   │   ├── header.(js|ts)\n│   │   ├── header.spec.(js|ts)\n│   │   ├── main.(js|ts)\n│   │   ├── main.spec.(js|ts)\n│   │   ├── title.(js|ts)\n│   │   └── title.spec.(js|ts)\n│   │\n│   ├── index.html\n│   ├── index.(js|ts)\n│   └── index.(css|less|scss)\n│\n├──  .babelrc (optional)\n├──  .editorconfig\n├──  .gitignore\n├──  bower.json (optional)\n├──  gulpfile.js\n├──  jspm.config.js (optional)\n├──  jspm.browser.js (optional)\n├──  package.json\n├──  tslint.json (optional)\n└──  typings.json (optional)\n</pre>\n\n\n<h2 id=\"configuration\">Configuration</h2>\n<p>You can find the configuration files in <code>conf/</code>.</p>\n<ul>\n<li><em>browsersync.conf(-dist).js</em>: define which folder to serve</li>\n<li><em>gulp.conf.js</em>: contains the variables used in other gulp files which defines tasks</li>\n<li><em>karma(-auto).conf.js</em>: contains Karma configuration for unit tests</li>\n<li><em>webpack(-dist | test).js</em>: Webpack configuration with definition of loaders and plugins regarding the environment (dev, dist or test)</li>\n</ul>\n<h2 id=\"gulpfile\">Gulpfile</h2>\n<p>As the <code>gulp_tasks</code> folder contains all gulp tasks used by the project, the <code>gulpfile.js</code> centralize all processes by chaining the actual tasks.</p>\n<p>It&#39;s made possible by the new Gulp 4 which allow to define precise task series and parallelization.</p>\n<h2 id=\"questions-the-generator-will-ask\">Questions the generator will ask</h2>\n<ul>\n<li><em>Framework</em>: React, Angular 2, Angular 1</li>\n<li><em>Modules manager</em>: Webpack with NPM, SystemJS with JSPM, None with Bower injection</li>\n<li><em>CSS preprocessor</em>: SASS, Less, CSS</li>\n<li><em>JS preprocessor</em>: ES2015 with Babel, Pure old JavaScript, TypeScript</li>\n<li><em>Sample app</em>: A working landing page, A simple Hello Word, A TodoMVC</li>\n</ul>\n"}],"loading":false,"loadingDoc":false},"gulpAngular":{"docs":[],"docsContent":[],"loading":false,"loadingDoc":true},"blog":{"posts":[],"postsContent":[],"loading":false,"loadingPost":false}}
+    </script>
+  
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
