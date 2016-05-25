@@ -1,0 +1,22 @@
+[
+  {
+    "path": "",
+    "title": "Let's Scaffold a Web App",
+    "file": "index.md"
+  },
+  {
+    "path": "setup",
+    "title": "Step 1 - Set up your dev environment",
+    "file": "setup.md"
+  },
+  {
+    "path": "install-generators",
+    "title": "Step 2 - Install a Yeoman generator",
+    "file": "install-generators.md"
+  },
+  {
+    "path": "scaffold-app",
+    "title": "Step 2 - Use a generator to scaffold out your app",
+    "file": "scaffold-app.md"
+  }
+]
