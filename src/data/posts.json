@@ -1,5 +1,11 @@
 [
   {
+    "path": "fountain-beta",
+    "file": "fountain-beta.md",
+    "title": "Fountain Beta (0.5.0) is released",
+    "excerpt": "Fountain is a new, state of the art, Yeoman generator. It's also, to our knowledge, the most ambitious one as it's not a generator for one technology stack but perhaps one to rule them all."
+  },
+  {
     "path": "gulp-angular-v1",
     "file": "gulp-angular-v1.md",
     "title": "generator-gulp-angular 1.0.0 stable released",
