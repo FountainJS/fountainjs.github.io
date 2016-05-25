@@ -1,4 +1,5 @@
 import 'babel-polyfill';
+import 'whatwg-fetch';
 
 import React from 'react';
 import {Router, browserHistory} from 'react-router';
