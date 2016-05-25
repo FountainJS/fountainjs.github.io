@@ -23,7 +23,7 @@ module.exports = {
       },
       {
         test: /\.(css|scss)$/,
-        loader: ExtractTextPlugin.extract('style', 'css!sass', 'postcss')
+        loader: ExtractTextPlugin.extract('style', 'css?minimize!sass', 'postcss')
       },
       {
         test: /\.js$/,
