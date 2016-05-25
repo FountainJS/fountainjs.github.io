@@ -26,6 +26,9 @@ export class Header extends Component {
           <a className="header-social" href="https://twitter.com/yeomanfountain">
             <img src="/assets/imgs/social-twitter.svg"/>
           </a>
+          <a className="header-social" href="https://fountain-slack.herokuapp.com">
+            <img src="/assets/imgs/social-slack.png"/>
+          </a>
         </p>
       </header>
     );
