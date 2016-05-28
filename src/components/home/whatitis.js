@@ -17,11 +17,11 @@ export default class Tagline extends Component {
           <li>Style (CSS) meta-language</li>
         </ul>
         <h3>Developer eXperience</h3>
-        <p>The tooling proposed is focused on offering the best developer experience in order that modern Web development benefits from the extremly dynamic ecosystem instead of creating fatigue.</p>
+        <p>The tooling proposed is focused on offering the best developer experience in order for modern Web development to benefit from the extremly dynamic ecosystem instead of creating fatigue.</p>
         <h3>Ready to go</h3>
-        <p>The main point of Fountain is to deliver a stable project whatever the very different options that you could choose and always keep up to date with last versions of every frameworks and tools.</p>
+        <p>The main point of Fountain is to deliver a stable project whatever the very different options that you could choose and always keep up to date with the latest version of each of your frameworks and tools.</p>
         <h3>Composition</h3>
-        <p>From the user point of view, Fountain is a very complete generator. From the inside, it's a complete ecosystem of various and specialized generators. This architecture will allow easier development and extension.</p>
+        <p>From the user's point of view, Fountain is a very complete generator. From the inside, it's a complete ecosystem of various and specialized generators. This architecture will allow easier development and extension.</p>
       </div>
     );
   }
