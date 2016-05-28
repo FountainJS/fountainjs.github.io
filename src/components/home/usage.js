@@ -8,7 +8,7 @@ export default class Usage extends Component {
     super();
     const content = `
 ## Usage
-Fountain is used as all Yeoman generators. You need no have Node and NPM installed and use them to install the \`yo\` command line interface and the generator itself.
+Fountain is used as all Yeoman generators. You need to have Node and NPM installed and use them to install the \`yo\` command line interface and the generator itself.
 \`\`\`bash
 $ npm install -g yo generator-fountain-webapp
 \`\`\`
