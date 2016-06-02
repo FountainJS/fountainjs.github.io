@@ -37,7 +37,7 @@ npm run serve:dist
 
 It will build your project and launch a local web server. Yo Hero!
 
-![](/assets/img/codelab/image_36.png)
+![](/assets/img/codelab/08_serve_dist.png)
 
 <p class="codelab-paging">
   <a href="index.html#toc">&laquo; Return to overview</a>

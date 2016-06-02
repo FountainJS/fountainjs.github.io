@@ -6,7 +6,7 @@ markdown: 1
 
 Open up your `mytodo` directory to take a look at what was actually scaffolded. It'll look like this:
 
-![](/assets/img/codelab/image_11.png)
+![](/assets/img/codelab/04_tree_view.png)
 
 In *mytodo*, we have:
 

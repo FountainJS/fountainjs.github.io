@@ -26,7 +26,7 @@ yo
 
 If you have a few generators installed, you'll be able to interactively choose from them. Highlight **Fountain Webapp**. Hit **enter** to run the generator.
 
-![](/assets/img/codelab/image_7.png)
+![](/assets/img/codelab/03_yo_interactive.png)
 
 <div class="note tip">
 
@@ -53,14 +53,15 @@ The FountainJS generator provides some choices to use your favorite:
 
 For this codelab, we will use **React**, **Wepack**, **Babel**, **SASS** and the **Redux TodoMVC** sample.
 
-![](/assets/img/codelab/image_8.png)
+![](/assets/img/codelab/03_yo_run_generator.png)
 
 Select successively these options with the arrows keys and the **enter** and watch the magic happen.
 
-![](/assets/img/codelab/image_10.png)
+![](/assets/img/codelab/03_yo_select.png)
 
 Yeoman will automatically scaffold out your app, grab your dependencies. After a few minutes we should be ready to go onto the next step.
 
+![](/assets/img/codelab/03_yo_end.png)
 
 <p class="codelab-paging">
   <a href="index.html#toc">&laquo; Return to overview</a>

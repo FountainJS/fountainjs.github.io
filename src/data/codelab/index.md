@@ -16,7 +16,7 @@ Don't know any React or Angular? That's okay, we'll walk you through it. However
 
 The sample web app you'll build today will be a implementation of [TodoMVC](http://todomvc.com/). You will be able to add todos, delete todos, filter todos, and together we'll add a feature to save todos offline.
 
-![Finished TodoMVC app](/assets/img/codelab/image_2.png)
+![Finished TodoMVC app](/assets/img/codelab/00_Finished_TodoMVC_app.png)
 
 <h2 id="toc">What's in this codelab?</h2>
 

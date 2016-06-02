@@ -32,7 +32,7 @@ This will start to install the Node packages required for the generator.
 
   <p>Along with using <code>npm install</code> directly, you can search for generators via the Yeoman interactive menu. Run <code>yo</code> and select <b>Install a generator</b> to search for published generators.</p>
 
-  <img src="/assets/img/codelab/image_4.png">
+  <img src="/assets/img/codelab/02_yo_interactive.png">
 
 </div>
 

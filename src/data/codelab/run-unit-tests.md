@@ -70,7 +70,7 @@ const initialState = [
 
 Fantastic you have fixed the test:
 
-![](/assets/img/codelab/image_33.png)
+![](/assets/img/codelab/06_run_test.png)
 
 Writing unit tests make it easier to catch bugs as your app gets bigger and when more developers join your team. The scaffolding feature of Yeoman makes writing unit tests easier so no excuse for not writing your own tests! ;)
 
