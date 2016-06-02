@@ -18,5 +18,35 @@
     "path": "scaffold-app",
     "title": "Step 3 - Use a generator to scaffold out your app",
     "file": "scaffold-app.md"
+  },
+  {
+    "path": "review-generated-files",
+    "title": "Step 4 - Review the Yeoman-generated app directory structure",
+    "file": "review-generated-files.md"
+  },
+  {
+    "path": "preview-inbrowser",
+    "title": "Step 5 - Preview your app in the browser",
+    "file": "preview-inbrowser.md"
+  },
+  {
+    "path": "run-unit-tests",
+    "title": "Step 6 - Test with Karma and Jasmine",
+    "file": "run-unit-tests.md"
+  },
+  {
+    "path": "local-storage",
+    "title": "Step 7 - Make todos persistent with local storage",
+    "file": "local-storage.md"
+  },
+  {
+    "path": "prepare-production",
+    "title": "Step 8 - Get ready for production",
+    "file": "prepare-production.md"
+  },
+  {
+    "path": "keep-going",
+    "title": "Yeoman can do more",
+    "file": "keep-going.md"
   }
 ]
