@@ -1,9 +1,3 @@
----
-layout: codelab
-title: 'Step 1: Set up your dev environment'
-markdown: 1
----
-
 <p class="mast-holder">
   <img src="/assets/img/yeoman-004.png">
 </p>
@@ -72,7 +66,7 @@ yo --version
 </div>
 
 <p class="codelab-paging">
-  <a href="index.html#toc">&laquo; Return to overview</a>
+  <a href="/codelab/#toc">&laquo; Return to overview</a>
   or
-  <a href="install-generators.html">Go to the next step &raquo;</a>
+  <a href="install-generators">Go to the next step &raquo;</a>
 </p>

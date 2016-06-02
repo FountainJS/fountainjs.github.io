@@ -1,9 +1,3 @@
----
-layout: codelab
-title: 'Step 8: Get ready for production'
-markdown: 1
----
-
 Ready to show your beautiful todo app to the world? Let’s try to build a production-ready version of it which we can ship.
 
 <div class="mast-holder">
@@ -37,10 +31,10 @@ npm run serve:dist
 
 It will build your project and launch a local web server. Yo Hero!
 
-![](/assets/img/codelab/08_serve_dist.png)
+![](/assets/imgs/codelab/08_serve_dist.png)
 
 <p class="codelab-paging">
-  <a href="index.html#toc">&laquo; Return to overview</a>
+  <a href="/codelab/#toc">&laquo; Return to overview</a>
   or
-  <a href="keep-going.html">You're done! Keep going &raquo;</a>
+  <a href="keep-going">You're done! Keep going &raquo;</a>
 </p>

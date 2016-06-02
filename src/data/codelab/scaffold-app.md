@@ -1,9 +1,3 @@
----
-layout: codelab
-title: 'Step 3: Use a generator to scaffold out your app'
-markdown: 1
----
-
 We've used the word "scaffold" a few times but you might not know what that means. Scaffolding, in the Yeoman sense of the word, means generating files for your web app based on your specific configuration requests. In this step, you'll see how Yeoman can generate files specifically for your favorite library or framework &mdash; with options for using other external libraries like Webpack, Babel and SASS &mdash; with minimal effort.
 
 ## Create a project folder
@@ -26,7 +20,7 @@ yo
 
 If you have a few generators installed, you'll be able to interactively choose from them. Highlight **Fountain Webapp**. Hit **enter** to run the generator.
 
-![](/assets/img/codelab/03_yo_interactive.png)
+![](/assets/imgs/codelab/03_yo_interactive.png)
 
 <div class="note tip">
 
@@ -53,18 +47,18 @@ The FountainJS generator provides some choices to use your favorite:
 
 For this codelab, we will use **React**, **Wepack**, **Babel**, **SASS** and the **Redux TodoMVC** sample.
 
-![](/assets/img/codelab/03_yo_run_generator.png)
+![](/assets/imgs/codelab/03_yo_run_generator.png)
 
 Select successively these options with the arrows keys and the **enter** and watch the magic happen.
 
-![](/assets/img/codelab/03_yo_select.png)
+![](/assets/imgs/codelab/03_yo_select.png)
 
 Yeoman will automatically scaffold out your app, grab your dependencies. After a few minutes we should be ready to go onto the next step.
 
-![](/assets/img/codelab/03_yo_end.png)
+![](/assets/imgs/codelab/03_yo_end.png)
 
 <p class="codelab-paging">
-  <a href="index.html#toc">&laquo; Return to overview</a>
+  <a href="/codelab/#toc">&laquo; Return to overview</a>
   or
-  <a href="review-generated-files.html">Go to the next step &raquo;</a>
+  <a href="review-generated-files">Go to the next step &raquo;</a>
 </p>

@@ -1,9 +1,3 @@
----
-layout: codelab
-title: 'Step 5: Preview your app in the browser'
-markdown: 1
----
-
 To preview your web app in your favourite web browser, you don't have to do anything special to set up a local web server on your computer &mdash; it's part of Yeoman.
 
 ## Start the server
@@ -16,7 +10,7 @@ npm run serve
 
 Open a new tab in your web browser on [localhost:3000](http://localhost:3000):
 
-![](/assets/img/codelab/05_run_preview.png)
+<a href="/assets/imgs/codelab/05_run_preview.png" target="_blank"><img src="/assets/imgs/codelab/05_run_preview.png" alt="05_run_preview" style="width: 800px;"></a>
 
 ## Stop the server
 
@@ -32,14 +26,14 @@ Live reloading is made available to your application through a set of Gulp tasks
 
 Below, we edited *Header.js* in the *src/app/components* directory. Thanks to live reload we go from this:
 
-![](/assets/img/codelab/05_before_live_reload.png)
+<a href="/assets/imgs/codelab/05_before_live_reload.png" target="_blank"><img src="/assets/imgs/codelab/05_before_live_reload.png" alt="05_before_live_reload" style="width: 800px;"></a>
 
 To this instantly:
 
-![](/assets/img/codelab/05_after_live_reload.png)
+<a href="/assets/imgs/codelab/05_after_live_reload.png" target="_blank"><img src="/assets/imgs/codelab/05_after_live_reload.png" alt="05_after_live_reload" style="width: 800px;"></a>
 
 <p class="codelab-paging">
-  <a href="index.html#toc">&laquo; Return to overview</a>
+  <a href="/codelab/#toc">&laquo; Return to overview</a>
   or
-  <a href="run-unit-test.html">Go to the next step &raquo;</a>
+  <a href="run-unit-tests">Go to the next step &raquo;</a>
 </p>

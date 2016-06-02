@@ -1,9 +1,3 @@
----
-layout: codelab
-title: 'Step 2: Install a Yeoman generator'
-markdown: 1
----
-
 In a traditional web development workflow, you would need to spend a lot of time setting up boilerplate code for your webapp, downloading dependencies, and manually creating your web folder structure. Yeoman generators to the rescue! Let's install a generator for FountainJS projects.
 
 ## Install an generator
@@ -32,13 +26,13 @@ This will start to install the Node packages required for the generator.
 
   <p>Along with using <code>npm install</code> directly, you can search for generators via the Yeoman interactive menu. Run <code>yo</code> and select <b>Install a generator</b> to search for published generators.</p>
 
-  <img src="/assets/img/codelab/02_yo_interactive.png">
+  <img src="/assets/imgs/codelab/02_yo_interactive.png">
 
 </div>
 
 
 <p class="codelab-paging">
-  <a href="index.html#toc">&laquo; Return to overview</a>
+  <a href="/codelab/#toc">&laquo; Return to overview</a>
   or
-  <a href="scaffold-app.html">Go to the next step &raquo;</a>
+  <a href="scaffold-app">Go to the next step &raquo;</a>
 </p>

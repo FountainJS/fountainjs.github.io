@@ -1,9 +1,3 @@
----
-layout: codelab
-title: 'Step 7: Make Todos persistent with local storage'
-markdown: 1
----
-
 Let’s revisit the issue of items not persisting when the browser refreshes with our React/Redux *mytodo* app.
 
 ## Install npm package
@@ -16,7 +10,7 @@ Run the following command:
 npm install --save redux-localstorage@rc
 ```
 
-![](/assets/img/codelab/07_install_localstorage.png)
+![](/assets/imgs/codelab/07_install_localstorage.png)
 
 ## Use redux-localstorage
 
@@ -56,17 +50,17 @@ export default function configureStore(initialState) {
 
 If you look at your app in the browser now you’ll see that there are one item "Use Yeoman" in the todo list. The app is initialising the todos store if local storage is empty and we haven’t given it any todo items yet.
 
-![](/assets/img/codelab/07_before_localstorage.png)
+![](/assets/imgs/codelab/07_before_localstorage.png)
 
 Go ahead and add a few items to the list:
 
-![](/assets/img/codelab/07_after_localstorage.png)
+![](/assets/imgs/codelab/07_after_localstorage.png)
 
 Now when we refresh our browser the items persist. Hooray!
 
 We can confirm whether our data is being persisted to local storage by checking the **Resources** panel in Chrome DevTools and selecting **Local Storage** from the lefthand side:
 
-![](/assets/img/codelab/07_show_localstorage.png)
+![](/assets/imgs/codelab/07_show_localstorage.png)
 
 <div class="note tip">
 
@@ -77,7 +71,7 @@ We can confirm whether our data is being persisted to local storage by checking 
 </div>
 
 <p class="codelab-paging">
-  <a href="index.html#toc">&laquo; Return to overview</a>
+  <a href="/codelab/#toc">&laquo; Return to overview</a>
   or
-  <a href="prepare-production.html">Go to the next step &raquo;</a>
+  <a href="prepare-production">Go to the next step &raquo;</a>
 </p>

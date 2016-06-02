@@ -1,9 +1,3 @@
----
-layout: codelab
-title: 'Step 6: Test with Karma and Jasmine'
-markdown: 1
----
-
 For those unfamiliar with [Karma](http://karma-runner.github.io), it is a JavaScript test runner that is test framework agnostic. The fountainjs generator has included test framework [Jasmine](http://jasmine.github.io/). When we ran `yo fountain-webapp` earlier in this codelab the generator scaffolded  files with pattern `*.spec.js` in the source folder of the `mytodo` folder, created a `conf/karma.conf.js` file, and pulled in the Node modules for Karma.  We’ll be editing a Jasmine script to describe our tests soon but let’s see how we can run tests first.
 
 ## Run unit tests
@@ -70,12 +64,12 @@ const initialState = [
 
 Fantastic you have fixed the test:
 
-![](/assets/img/codelab/06_run_test.png)
+![](/assets/imgs/codelab/06_run_test.png)
 
 Writing unit tests make it easier to catch bugs as your app gets bigger and when more developers join your team. The scaffolding feature of Yeoman makes writing unit tests easier so no excuse for not writing your own tests! ;)
 
 <p class="codelab-paging">
-  <a href="index.html#toc">&laquo; Return to overview</a>
+  <a href="/codelab/#toc">&laquo; Return to overview</a>
   or
-  <a href="local-storage.html">Go to the next step &raquo;</a>
+  <a href="local-storage">Go to the next step &raquo;</a>
 </p>

@@ -1,12 +1,6 @@
----
-layout: codelab
-title: 'Step 4: Review the Yeoman-generated app'
-markdown: 1
----
-
 Open up your `mytodo` directory to take a look at what was actually scaffolded. It'll look like this:
 
-![](/assets/img/codelab/04_tree_view.png)
+![](/assets/imgs/codelab/04_tree_view.png)
 
 In *mytodo*, we have:
 
@@ -40,7 +34,7 @@ In *mytodo*, we have:
 
 
 <p class="codelab-paging">
-  <a href="index.html#toc">&laquo; Return to overview</a>
+  <a href="/codelab/#toc">&laquo; Return to overview</a>
   or
-  <a href="preview-inbrowser.html">Go to the next step &raquo;</a>
+  <a href="preview-inbrowser">Go to the next step &raquo;</a>
 </p>
