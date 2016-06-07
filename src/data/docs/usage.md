@@ -38,7 +38,7 @@ yo fountain-webapp
 * `--framework=(react|angular2|angular1)` Select a framework
 * `--modules=(wepack|systemjs|inject)` Select a modules manager
 * `--js=(babel|typescript|js)` Select a JS preprocessor
-* `--css=(scss|less|css)` Select a CSS preprocessor
+* `--css=(scss|less|stylus|css)` Select a CSS preprocessor
 
 
 ## Use NPM scripts
@@ -118,7 +118,7 @@ Every component of the app get its own directory which contains the component co
 │   │
 │   ├── index.html
 │   ├── index.(js|ts)
-│   └── index.(css|less|scss)
+│   └── index.(css|less|scss|styl)
 │
 ├──  .babelrc (optional)
 ├──  .editorconfig
