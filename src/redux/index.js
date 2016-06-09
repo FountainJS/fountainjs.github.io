@@ -11,7 +11,7 @@ export default function configureStore() {
     initialState,
     compose(
       applyMiddleware(thunk),
-      window.devToolsExtension ? window.devToolsExtension() : f => f
+      isBrowser && window.devToolsExtension ? window.devToolsExtension() : f => f
     )
   );
 }
