@@ -99,7 +99,7 @@ The following tests are executed on the generated project:
 - run `gulp serve` and
 	- test if the list of techs is displayed
 	- test live reload for JS files
-	- test live reload for css/scss/less files
+	- test live reload for css/scss/less/styl files
 - run `gulp serve:dist` and test if the list of techs is displayed
 
 Tests are ran by Mocha and we use [Saucelabs](http://saucelabs.com/) and [WebdriverIO](http://webdriver.io/) for remote browser tests.
