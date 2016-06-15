@@ -40,6 +40,18 @@ yo fountain-webapp
 * `--js=(babel|typescript|js)` Select a JS preprocessor
 * `--css=(scss|less|css)` Select a CSS preprocessor
 
+## Sub-generators
+
+Few sub-generators are available. You can see the full list by running `yo --generators`.  
+Each generator has 2 options:
+- You can set the name of the generated item with `--name`
+- You can set the path of the generated item with `--dir`
+
+**Example:**
+
+```
+yo fountain-angular2:component --name myComponent --dir components/game
+```
 
 ## Use NPM scripts
 
