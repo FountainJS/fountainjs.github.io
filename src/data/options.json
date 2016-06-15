@@ -172,6 +172,15 @@
           "",
           "Less runs inside Node, in the browser and inside Rhino. There are also many 3rd party tools that allow you to compile your files and watch for changes. The quickest place for first experiments with less is our online editor."
         ]
+      },
+      {
+        "name": "Stylus",
+        "logo": "/assets/imgs/stylus.png",
+        "description": [
+          "Robust, expressive, and feature-rich CSS superset",
+          "",
+          "Stylus is a revolutionary new language, providing an efficient, dynamic, and expressive way to generate CSS. Supporting both an indented syntax and regular CSS style."
+        ]
       }
     ]
   }
