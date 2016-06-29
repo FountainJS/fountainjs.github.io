@@ -14,9 +14,9 @@ export class Header extends Component {
           <Link to="/doc">
             Documentation
           </Link>
-          <Link to="/gulp-angular">
-            gulp-angular
-          </Link>
+          <a target="_blank" href="http://yeoman.io/codelab/">
+            Codelab
+          </a>
           <Link to="/blog">
             Blog
           </Link>
