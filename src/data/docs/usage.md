@@ -33,7 +33,6 @@ yo fountain-webapp
 ## Yo options
 `yo fountain-generator --help` or `yo fountain-generator -h` for help. All options are not required. If not provided, default values will be used.
 
-* `--skip-cache` Do not remember prompt answers, default is `false`
 * `--skip-install` Do not automatically install dependencies, default is `false`
 * `--framework=(react|angular2|angular1)` Select a framework
 * `--modules=(wepack|systemjs|inject)` Select a modules manager

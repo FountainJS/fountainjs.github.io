@@ -14,40 +14,13 @@ The simplest way for you to contribute is by creating issues for reporting a bug
 
 ### Issue location
 
-- Every issue or feature request should be in the related repository (if your issue concerns `Gulp`, post it in [generator-fountain-gulp](https://github.com/FountainJS/generator-fountain-gulp/issues))  
-- If the issue is a general question or a general feature request, you should post it in [generator-fountain-webapp](https://github.com/FountainJS/generator-fountain-webapp/issues)
-- As a contributor, you might want to post issue about the coding environment. If so, you can post it in the meta-repo [fountain](https://github.com/FountainJS/fountain/issues)
+- Every issue or feature request should be in the related repository (if your issue concerns `Gulp`, post it in [generator-fountain-gulp](https://github.com/FountainJS/generator-fountain-gulp/issues)).
+- If the issue is a general question or a general feature request, you should post it in [generator-fountain-webapp](https://github.com/FountainJS/generator-fountain-webapp/issues).
+- As a contributor, you might want to post issue about the coding environment. If so, you can post it in the meta-repo [fountain](https://github.com/FountainJS/fountain/issues).
 
 ### Issue template
 
-The issue should contain the details about your configuration at the moment you met the bug.
-
-- If you had a bug related to a generated project, please provide the framework, language and modules manager
-- Specify the version of the generator(s) you are using
-- If relevant, provide Node/npm version and specify your OS
-- In order to easily reproduce the bug, you should provide a replication project (Github, Plunker...)
-
-In any case, every issue must follow this template:
-
->* **Configuration of the project(s) you met the issue in**
-
->* **Version of the generator(s) you are using**
-
->* **Node/NPM/OS versions**
-
->* **Current behavior**
-
->* **Expected/desired behavior**
-
->* **Other information**
-
->* **How to reproduce the bug (Github project, https://plnkr.co...)**
-
->* **Current behavior**
-
->* **Expected/desired behavior**
-
->* **Other information**
+For a fastest support we will recommend you to follow and complete the [issue template](https://github.com/FountainJS/generator-fountain-webapp/issues/new) provide on Github.  
 
 ## <a name="install"></a>Environment
 
