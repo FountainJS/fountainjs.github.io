@@ -35,7 +35,7 @@ yo fountain-webapp
 
 * `--skip-install` Do not automatically install dependencies, default is `false`
 * `--framework=(react|angular2|angular1)` Select a framework
-* `--modules=(wepack|systemjs|inject)` Select a modules manager
+* `--modules=(webpack|systemjs|inject)` Select a modules manager
 * `--js=(babel|typescript|js)` Select a JS preprocessor
 * `--css=(scss|less|stylus|css)` Select a CSS preprocessor
 
