@@ -15,7 +15,7 @@
   width: 100%;
   order: 1;
   @media (min-width: $screen-sm) {
-    width: 80%;
+    max-width: 80%;
     order: 0;
   }
 }
