@@ -7,8 +7,9 @@ export default class Title extends Component {
         <div className="container">
           <div className="title-text">
             <h1 className="title-text-title">
-              A complete set of Yeoman generators to start all your frontend projects
+              One Yeoman generator for all your frontend projects
             </h1>
+            <iframe src="https://ghbtns.com/github-btn.html?user=FountainJS&repo=generator-fountain-webapp&type=star&count=true&size=large" frameBorder="0" scrolling="0" width="160px" height="30px"></iframe>
           </div>
           <div className="title-logo">
             <div className="title-logo-container">
