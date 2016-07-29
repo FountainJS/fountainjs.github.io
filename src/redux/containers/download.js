@@ -1,11 +1,11 @@
 import {connect} from 'react-redux';
-import Home from '../../components/home/home';
-import {fetchOptions, selectOption} from '../actions/home';
+import Home from '../../components/download/download';
+import {fetchOptions, selectOption} from '../actions/options';
 
 const mapStateToProps = state => {
   return {
-    options: state.home.options,
-    selection: state.home.selection
+    options: state.options.options,
+    selection: state.options.selection
   };
 };
 
