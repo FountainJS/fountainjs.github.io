@@ -12,8 +12,8 @@ function receiveOption(options) {
 
 export function fetchOptions() {
   return (dispatch, getState) => {
-    const home = getState().home;
-    if (!_.isEmpty(home.options) || home.loading) {
+    const options = getState().options;
+    if (!_.isEmpty(options.options) || options.loading) {
       return;
     }
     dispatch(requestOption());
