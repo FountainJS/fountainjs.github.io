@@ -8,6 +8,7 @@ export default class Download extends Component {
   static propTypes = {
     options: PropTypes.array.isRequired,
     selection: PropTypes.array.isRequired,
+    releases: PropTypes.array.isRequired,
     select: PropTypes.func.isRequired,
     fetch: PropTypes.func.isRequired
   };
@@ -19,7 +20,7 @@ export default class Download extends Component {
   }
 
   render() {
-    const optionsProps = pick(this.props, 'options', 'selection', 'select');
+    const optionsProps = pick(this.props, 'options', 'selection', 'select', 'releases');
     return (
       <div>
         <Title/>

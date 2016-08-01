@@ -1,4 +1,3 @@
-import {compact} from 'lodash';
 import React, {Component, PropTypes} from 'react';
 import Option from './option';
 import DownloadLink from './download-link';
@@ -7,12 +6,12 @@ export default class Options extends Component {
   static propTypes = {
     options: PropTypes.array.isRequired,
     selection: PropTypes.array.isRequired,
+    releases: PropTypes.array.isRequired,
     select: PropTypes.func.isRequired
   }
 
   render() {
     const {options, selection, select} = this.props;
-    console.log('coucou', options, selection, options.length, compact(selection).length);
     return (
       <div className="options container">
         <h2>Choose your technologies</h2>
@@ -21,7 +20,11 @@ export default class Options extends Component {
         <p>These choices are very structurant so choose them carefully but freely: Fountain will be able to generate a fully configured and working project whatever the options you choose.</p>
         {options.map((option, i) => <Option key={i} option={i} selected={selection[i]} select={select} {...option}/>)}
         <h2>Download your seed project</h2>
-        {compact(selection).length === options.length ? <DownloadLink options={this.props.options} selection={this.props.selection}/> : <p>explain</p>}
+        {
+          selection.filter(x => x >= 0).length === options.length ?
+            <DownloadLink options={this.props.options} selection={this.props.selection} releases={this.props.releases}/> :
+            <p>Simply click on a logo of each category. When you would have chosen one of each, the release archive will appear here.</p>
+        }
       </div>
     );
   }
