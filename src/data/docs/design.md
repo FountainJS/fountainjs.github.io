@@ -15,7 +15,7 @@ Isolation is not always easy to come up. Adding a technology can imply changing 
 Isolation is important but there is some options or choices that are so important that they have impact on every other generators. To deal with those, we chose to set up a short and fixed list of **meta** options which will be spread amongst all others generators. Each fountain generator can rely on having a value for these options.
 
 The list, at this point is:
-- **framework** the main Web framework (React, Angular 1, Angular 2)
+- **framework** the main Web framework (React, Angular 1, Angular 2, Vue 2)
 - **modules** the module management (Webpack, SystemJS, Inject)
 - **js** the JS preprocessor (none, Babel, TypeScript)
 - **css** the CSS preprocessor (none, Sass, Less)
@@ -27,19 +27,19 @@ Each generator can ask for more choices like what component library you want wit
 
 ```
 ASCII!
-                              -----------------------------
-                                generator-fountain-webapp
-                                    webapp entry point
-                              -----------------------------
-                                            |
-            -------------------------------------------------------------------
-            |                               |                                 |
----------------------------     ---------------------------     ------------------------
-generator-fountain-angular1     generator-fountain-angular2     generator-fountain-react
-    seed angular 1 app                seed angular 2 app              seed react app
----------------------------     ---------------------------     ------------------------
-            |                               |                                 |
-            -------------------------------------------------------------------
+                                              -----------------------------
+                                                generator-fountain-webapp
+                                                    webapp entry point
+                                              -----------------------------
+                                                            |
+            ---------------------------------------------------------------------------------------------
+            |                               |                                 |                         |
+---------------------------     ---------------------------     ------------------------     ----------------------
+generator-fountain-angular1     generator-fountain-angular2     generator-fountain-react     generator-fountain-vue
+    seed angular 1 app                seed angular 2 app              seed react app              seed vue app
+---------------------------     ---------------------------     ------------------------     ----------------------
+            |                               |                                 |                         |
+            ----------------------------------------------------------------------------------------------
                                             |
                                 -------------------------        --------------------------        --------------------------------        ---------------------------
                                  generator-fountain-gulp   ----   generator-fountain-karma    ---   generator-fountain-browsersync    ---   generator-fountain-eslint
