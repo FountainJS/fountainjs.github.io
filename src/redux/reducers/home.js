@@ -1,4 +1,4 @@
-import {REQUEST_OPTIONS, RECEIVE_OPTIONS, SELECT_OPTION} from '../actions/options';
+import {REQUEST_OPTIONS, RECEIVE_OPTIONS, SELECT_OPTION} from '../actions/home';
 
 const initialState = {
   options: [],

@@ -2,8 +2,7 @@ import React from 'react';
 import {Route, IndexRoute} from 'react-router';
 
 import Main from './components/main';
-import Home from './components/home/home';
-import Download from './redux/containers/download';
+import Home from './redux/containers/home';
 import Doc from './redux/containers/doc';
 import DocContent from './redux/containers/doc-content';
 import GulpAngular from './redux/containers/gulp-angular';
@@ -15,12 +14,10 @@ import Post from './redux/containers/post';
 export default (
   <Route component={Main}>
     <Route path="/" component={Home}/>
-    <Route path="/download" component={Download}/>
     <Route path="/doc" component={Doc}>
       <IndexRoute component={DocContent}/>
       <Route path=":doc" component={DocContent}/>
     </Route>
-    <Route path="/" component={Home}/>
     <Route path="/gulp-angular" component={GulpAngular}>
       <IndexRoute component={GulpAngularContent}/>
       <Route path=":doc" component={GulpAngularContent}/>
