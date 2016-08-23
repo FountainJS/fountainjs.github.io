@@ -14,7 +14,7 @@ To take profit of the best of the Yeoman infrastructure, we heavily relies on th
 
 Thereby, each needs of your future application will be addressed by a dedicated Yeoman generator (each will be used depending of the options you selected or not).
 
-More informations in [Fountain Design](doc/design).
+More informations in [Fountain Design](/doc/design).
 
 ### Web framework layer
 This generators can be used directly to bypass the framework question.
@@ -34,8 +34,8 @@ This generators can be used directly to bypass the framework question.
 [![SystemJS](/assets/imgs/systemjs.png)](https://github.com/FountainJS/generator-fountain-systemjs)
 [![Bower](/assets/imgs/bower.png)](https://github.com/FountainJS/generator-fountain-inject)
 
-## [Usage](doc/usage)
+## [Usage](/doc/usage)
 
 ## [Changelog](https://github.com/FountainJS/generator-fountain-webapp/releases)
 
-## [Contributing](doc/contributing)
+## [Contributing](/doc/contributing)
