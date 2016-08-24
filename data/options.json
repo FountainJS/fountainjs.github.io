@@ -3,6 +3,7 @@
     "title": "Web Framework",
     "values": [
       {
+        "key": "react",
         "name": "React",
         "logo": "/assets/imgs/react.png",
         "description": [
@@ -15,6 +16,7 @@
         ]
       },
       {
+        "key": "angular1",
         "name": "Angular 1",
         "logo": "/assets/imgs/angular1.png",
         "description": [
@@ -27,6 +29,7 @@
         ]
       },
       {
+        "key": "angular2",
         "name": "Angular 2",
         "logo": "/assets/imgs/angular2.png",
         "description": [
@@ -46,6 +49,7 @@
     "title": "Module management",
     "values": [
       {
+        "key": "webpack",
         "name": "Webpack and NPM",
         "logo": "/assets/imgs/webpack.png",
         "description": [
@@ -63,6 +67,7 @@
         ]
       },
       {
+        "key": "systemjs",
         "name": "SystemJS and JSPM",
         "logo": "/assets/imgs/systemjs.png",
         "description": [
@@ -75,6 +80,7 @@
         ]
       },
       {
+        "key": "inject",
         "name": "No modules and Bower",
         "logo": "/assets/imgs/bower.png",
         "description": [
@@ -91,6 +97,7 @@
     "title": "JavaScript preprocessing",
     "values": [
       {
+        "key": "js",
         "name": "JavaScript (no preprocessors)",
         "logo": "/assets/imgs/js.png",
         "description": [
@@ -102,6 +109,7 @@
         ]
       },
       {
+        "key": "babel",
         "name": "ECMAScript 2015 with Babel",
         "logo": "/assets/imgs/babel.png",
         "description": [
@@ -116,6 +124,7 @@
         ]
       },
       {
+        "key": "typescript",
         "name": "TypeScript",
         "logo": "/assets/imgs/typescript.png",
         "description": [
@@ -136,6 +145,7 @@
     "title": "CSS preprocessing",
     "values": [
       {
+        "key": "css",
         "name": "CSS (no preprocessors)",
         "logo": "/assets/imgs/css.png",
         "description": [
@@ -147,6 +157,7 @@
         ]
       },
       {
+        "key": "scss",
         "name": "Sass",
         "logo": "/assets/imgs/sass.png",
         "description": [
@@ -165,6 +176,7 @@
         ]
       },
       {
+        "key": "less",
         "name": "Less",
         "logo": "/assets/imgs/less.png",
         "description": [
@@ -174,12 +186,42 @@
         ]
       },
       {
+        "key": "styl",
         "name": "Stylus",
         "logo": "/assets/imgs/stylus.png",
         "description": [
           "Robust, expressive, and feature-rich CSS superset",
           "",
           "Stylus is a revolutionary new language, providing an efficient, dynamic, and expressive way to generate CSS. Supporting both an indented syntax and regular CSS style."
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Template",
+    "values": [
+      {
+        "key": "hello",
+        "name": "Hello World",
+        "logo": "/assets/imgs/helloworld.png",
+        "description": [
+          "The simplest Hello World app for you to build exactly what you want."
+        ]
+      },
+      {
+        "key": "techs",
+        "name": "Fountain landing page",
+        "logo": "/assets/imgs/fountain.png",
+        "description": [
+          "The standard Fountain landing page listing the technologies you choose. Illustrate a little app with the framework you choose."
+        ]
+      },
+      {
+        "key": "todoMVC",
+        "name": "TodoMVC",
+        "logo": "/assets/imgs/todomvc.png",
+        "description": [
+          "A working implementation of the one and only TodoMVC"
         ]
       }
     ]
