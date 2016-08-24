@@ -1,0 +1,40 @@
+.download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.download-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: .5rem;
+  padding: .5rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $lightBlue;
+  }
+}
+
+.download-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: .5rem;
+
+  p {
+    padding: 0 1rem;
+  }
+
+  .download-icon {
+    height: 3rem;
+  }
+}
+
+.download-link-icon {
+  height: 5rem;
+  background-color: white;
+  padding: .5rem;
+}

@@ -11,6 +11,9 @@ export class Header extends Component {
           </Link>
         </p>
         <p className="header-links">
+          <Link to="/download">
+            Download
+          </Link>
           <Link to="/doc">
             Documentation
           </Link>

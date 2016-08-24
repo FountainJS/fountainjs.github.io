@@ -38,7 +38,7 @@ export default class Option extends Component {
               {values.map((value, i) => <OptionValue key={i} {...attributes(value, i)}/>)}
             </div>
           </div>
-          {this.description()}
+          {/* this.description() */}
         </div>
       </div>
     );
