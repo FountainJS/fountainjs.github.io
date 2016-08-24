@@ -20,7 +20,6 @@ export default (
       <IndexRoute component={DocContent}/>
       <Route path=":doc" component={DocContent}/>
     </Route>
-    <Route path="/" component={Home}/>
     <Route path="/gulp-angular" component={GulpAngular}>
       <IndexRoute component={GulpAngularContent}/>
       <Route path=":doc" component={GulpAngularContent}/>
