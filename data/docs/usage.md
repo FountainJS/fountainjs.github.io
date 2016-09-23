@@ -34,7 +34,7 @@ yo fountain-webapp
 `yo fountain-generator --help` or `yo fountain-generator -h` for help. All options are not required. If not provided, default values will be used.
 
 * `--skip-install` Do not automatically install dependencies, default is `false`
-* `--framework=(react|angular2|angular1)` Select a framework
+* `--framework=(react|angular2|angular1|vue)` Select a framework
 * `--modules=(webpack|systemjs|inject)` Select a modules manager
 * `--js=(babel|typescript|js)` Select a JS preprocessor
 * `--css=(scss|less|stylus|css)` Select a CSS preprocessor
@@ -163,7 +163,7 @@ It's made possible by the new Gulp 4 which allow to define precise task series a
 
 ## Questions the generator will ask
 
-- *Framework*: React, Angular 2, Angular 1
+- *Framework*: React, Angular 2, Angular 1, Vue 2
 - *Modules manager*: Webpack with NPM, SystemJS with JSPM, None with Bower injection
 - *CSS preprocessor*: SASS, Less, CSS
 - *JS preprocessor*: ES2015 with Babel, Pure old JavaScript, TypeScript

@@ -42,6 +42,18 @@
           "### Incredible Tooling",
           "Build features quickly with simple, declarative templates. Extend the template language with your own components and use a wide array of existing components. Get immediate Angular-specific help and feedback with nearly every IDE and editor. All this comes together so you can focus on building amazing apps rather than trying to make the code work."
         ]
+      },
+      {
+        "name": "Vue.js 2",
+        "logo": "/assets/imgs/vue.png",
+        "description": [
+          "### Simple",
+          "Write some HTML, grab some JSON, create a Vue instance, that's it.",
+          "### Reactive",
+          "Expressions & computed properties with transparent dependency tracking.",
+          "### Components",
+          "Compose your application with decoupled, reusable components."
+        ]
       }
     ]
   },
