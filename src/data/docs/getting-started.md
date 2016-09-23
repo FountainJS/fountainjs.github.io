@@ -22,6 +22,7 @@ This generators can be used directly to bypass the framework question.
 [![React](/assets/imgs/react.png)](https://github.com/FountainJS/generator-fountain-react)
 [![Angular 1](/assets/imgs/angular1.png)](https://github.com/FountainJS/generator-fountain-angular1)
 [![Angular 2](/assets/imgs/angular2.png)](https://github.com/FountainJS/generator-fountain-angular2)
+[![Vue 2](/assets/imgs/vue.png)](https://github.com/FountainJS/generator-fountain-vue)
 
 ### Web tooling layer
 [![Gulp](/assets/imgs/gulp.png)](https://github.com/FountainJS/generator-fountain-gulp)
