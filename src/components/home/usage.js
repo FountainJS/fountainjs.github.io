@@ -17,7 +17,7 @@ Fountain is used as all Yeoman generators. You need to have Node and NPM install
 \`\`\`bash
 $ npm install -g yo generator-fountain-webapp
 \`\`\`
-Once the dependencies installed, simply launch the generator and answer to the questions.
+Once the dependencies installed, simply launch the generator and answer the questions.
 \`\`\`bash
 $ yo fountain-webapp
 \`\`\`
