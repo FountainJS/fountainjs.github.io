@@ -8,15 +8,13 @@ const autoprefixer = require('autoprefixer');
 
 module.exports = {
   module: {
-    preLoaders: [
+    loaders: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'eslint'
-      }
-    ],
-
-    loaders: [
+        loader: 'eslint',
+        enforce: 'pre'
+      },
       {
         test: /.json$/,
         loaders: ['json']
@@ -48,9 +46,13 @@ module.exports = {
     new webpack.optimize.UglifyJsPlugin({
       compress: {unused: true, dead_code: true} // eslint-disable-line camelcase
     }),
-    new ExtractTextPlugin('/index-[contenthash].css')
+    new ExtractTextPlugin('/index-[contenthash].css'),
+    new webpack.LoaderOptionsPlugin({
+      options: {
+        postcss: () => [autoprefixer]
+      }
+    })
   ],
-  postcss: () => [autoprefixer],
   output: {
     path: path.join(process.cwd(), conf.paths.dist),
     filename: '/index-[hash].js'

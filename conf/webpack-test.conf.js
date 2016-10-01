@@ -1,14 +1,14 @@
+const webpack = require('webpack');
+
 module.exports = {
   module: {
-    preLoaders: [
+    loaders: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'eslint'
-      }
-    ],
-
-    loaders: [
+        loader: 'eslint',
+        enforce: 'pre'
+      },
       {
         test: /.json$/,
         loaders: [
@@ -29,7 +29,11 @@ module.exports = {
       }
     ]
   },
-  debug: true,
+  plugins: [
+    new webpack.LoaderOptionsPlugin({
+      debug: true
+    })
+  ],
   devtool: 'cheap-module-eval-source-map',
   externals: {
     'react/lib/ExecutionEnvironment': true,
