@@ -47,10 +47,14 @@ module.exports = {
       template: conf.path.src('index.html'),
       inject: true
     }),
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.LoaderOptionsPlugin({
+      options: {
+        postcss: () => [autoprefixer]
+      },
+      debug: true
+    })
   ],
-  postcss: () => [autoprefixer],
-  debug: true,
   devtool: 'cheap-module-eval-source-map',
   output: {
     path: path.join(process.cwd(), conf.paths.tmp),
