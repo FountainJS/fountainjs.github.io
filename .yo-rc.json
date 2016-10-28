@@ -1,0 +1,21 @@
+{
+  "generator-fountain-react": {
+    "version": "1.0.0-rc1",
+    "props": {
+      "resolved": "/home/zckrs/github/fountain/generator-fountain-react/generators/app/index.js",
+      "namespace": "fountain-react:app",
+      "argv": {
+        "remain": [],
+        "cooked": [],
+        "original": []
+      },
+      "framework": "react",
+      "modules": "webpack",
+      "css": "scss",
+      "js": "babel",
+      "ci": [],
+      "sample": "techs",
+      "router": "router"
+    }
+  }
+}

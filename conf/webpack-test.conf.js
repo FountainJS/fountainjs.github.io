@@ -4,12 +4,6 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: 'eslint',
-        enforce: 'pre'
-      },
-      {
         test: /.json$/,
         loaders: [
           'json'
@@ -18,19 +12,21 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loaders: [
-          'babel'
-        ]
+        loader: 'eslint',
+        enforce: 'pre'
       },
       {
         test: /\.js$/,
-        exclude: /(node_modules|.*\.spec\.js)/,
-        loader: 'isparta'
+        exclude: /node_modules/,
+        loaders: [
+          'babel'
+        ]
       }
     ]
   },
   plugins: [
     new webpack.LoaderOptionsPlugin({
+      options: {},
       debug: true
     })
   ],

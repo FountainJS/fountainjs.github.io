@@ -15,6 +15,12 @@ module.exports = {
         ]
       },
       {
+        test: /.js$/,
+        exclude: /node_modules/,
+        loader: 'eslint',
+        enforce: 'pre'
+      },
+      {
         test: /\.(css|scss)$/,
         loaders: [
           'style',
@@ -44,8 +50,7 @@ module.exports = {
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.NoErrorsPlugin(),
     new HtmlWebpackPlugin({
-      template: conf.path.src('index.html'),
-      inject: true
+      template: conf.path.src('index.html')
     }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.LoaderOptionsPlugin({
@@ -58,7 +63,7 @@ module.exports = {
   devtool: 'cheap-module-eval-source-map',
   output: {
     path: path.join(process.cwd(), conf.paths.tmp),
-    filename: '/index.js'
+    filename: 'index.js'
   },
   entry: [
     'webpack/hot/dev-server',
