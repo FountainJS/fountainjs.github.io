@@ -1,5 +1,3 @@
-const path = require('path');
-
 const gulp = require('gulp');
 const HubRegistry = require('gulp-hub');
 const browserSync = require('browser-sync');
@@ -8,12 +6,7 @@ const conf = require('./conf/gulp.conf');
 const prerender = require('./prerender');
 
 // Load some files into the registry
-const hub = new HubRegistry([
-  'gulp_tasks/misc.js',
-  'gulp_tasks/browsersync.js',
-  'gulp_tasks/karma.js',
-  'gulp_tasks/webpack.js'
-]);
+const hub = new HubRegistry([conf.path.tasks('*.js')]);
 
 // Tell gulp to use the tasks just loaded
 gulp.registry(hub);
@@ -27,7 +20,12 @@ gulp.task('default', gulp.series('clean', 'build'));
 gulp.task('watch', watch);
 gulp.task('prerender', prerender);
 
+function reloadBrowserSync(cb) {
+  browserSync.reload();
+  cb();
+}
+
 function watch(done) {
-  gulp.watch(path.join(conf.paths.tmp, 'index.html'), browserSync.reload);
+  gulp.watch(conf.path.tmp('index.html'), reloadBrowserSync);
   done();
 }

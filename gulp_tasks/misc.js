@@ -21,6 +21,7 @@ function other() {
     path.join(conf.paths.src, '/**/*'),
     path.join(`!${conf.paths.src}`, '/**/favicons/**/*'),
     path.join(`!${conf.paths.src}`, '/**/*.{html,css,js,scss}')
+    // path.join(`!${conf.paths.src}`, '/**/*.{scss,js}')
   ])
     .pipe(fileFilter)
     .pipe(gulp.dest(conf.paths.dist));
